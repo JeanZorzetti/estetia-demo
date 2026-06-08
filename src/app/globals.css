@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*
+  Client theme tokens are injected as CSS custom properties by layout.tsx
+  from src/config/client.ts. Tailwind maps them via tailwind.config.ts:
+    bg-primary  → var(--color-primary)
+    bg-accent   → var(--color-accent)
+  To swap client, edit src/config/client.ts only.
+*/
+
+@layer base {
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+}
