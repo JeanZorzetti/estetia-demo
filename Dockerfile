@@ -5,7 +5,6 @@ WORKDIR /app
 RUN corepack enable && corepack prepare pnpm@latest --activate
 
 COPY package.json pnpm-lock.yaml .npmrc* ./
-COPY package.json ./
 RUN pnpm install --frozen-lockfile
 
 # Stage 2: build
