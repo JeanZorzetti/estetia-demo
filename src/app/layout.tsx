@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "EstetiaCRM | Sites e automação que enchem a agenda da sua clínica",
+  title: "Estetia | Sites e automação que enchem a agenda da sua clínica",
   description:
     "Sites de alta conversão + automação que reduz faltas e captura cada lead para clínicas de estética. Entrega premium em 1 semana.",
 };

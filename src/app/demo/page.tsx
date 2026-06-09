@@ -8,7 +8,7 @@ import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
   title: "Clínica Aurora | Demo — Estética de Luxo",
-  description: "Exemplo de site premium de clínica de estética entregue pela EstetiaCRM.",
+  description: "Exemplo de site premium de clínica de estética entregue pela Estetia.",
 };
 
 // Demo de clínica fictícia (Clínica Aurora) — usada como PROVA na página B2B (home).

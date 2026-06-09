@@ -4,7 +4,7 @@ export type PainCard = { title: string; description: string; icon: string; tone:
 export type Step = { title: string; description: string; icon: string; highlight?: boolean };
 
 export const b2bConfig = {
-  brand: "EstetiaCRM",
+  brand: "Estetia",
   demoUrl: "/demo",
 
   hero: {
@@ -86,7 +86,7 @@ export const b2bConfig = {
     price: "R$ 3.500",
     scarcity: "Vagas limitadas para este valor.",
     formIntro:
-      "Vamos focar em iniciar uma conversa. Deixe seus dados e descubra como o EstetiaCRM se adapta à sua realidade.",
+      "Vamos focar em iniciar uma conversa. Deixe seus dados e descubra como a Estetia se adapta à sua realidade.",
     reassurance: "Resposta humana em até 1 hora.",
   },
 };
