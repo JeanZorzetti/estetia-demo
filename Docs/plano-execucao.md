@@ -280,7 +280,9 @@ A "decisão em aberto" (serviço vs produto) foi resolvida: **Funil A — SEO in
 
 **Feito por Claude (não pela fábrica)** — re-implementação contida não justificava ligar um squad (custo de RAM). Regra "visual vem do Stitch" respeitada: design da V1 Premium do Stitch → re-implementado em React.
 
-**Decisão de arquitetura:** B2B virou a **home `/`**; demo Aurora movida para **`/demo`**. (Pendência de domínio: idealmente B2B em `estetiacrm.com.br` raiz e demo em `demo.estetiacrm.com.br` — decisão de DNS/EasyPanel, código já pronto pra isso.)
+**Decisão de arquitetura (RESOLVIDA):** B2B = home `/`; demo Aurora = `/demo`. **Marca = "Estetia"** (NÃO "EstetiaCRM" — o CRM é o produto SEPARADO em `estetiacrm.com.br`, projeto `Doc-CRM`). **Subdomínio alvo: `estetia.estetiacrm.com.br`** (B2B na raiz, Aurora em /demo). ⚠️ AÇÃO MANUAL PENDENTE no EasyPanel: trocar o domínio do serviço de `demo.estetiacrm.com.br` → `estetia.estetiacrm.com.br`. Código já pronto (link da demo é relativo `/demo`).
+
+**⚠️ NOTA DE MARCA/FUNIL (decisão de negócio em aberto):** `estetiacrm.com.br` (raiz) JÁ é ocupado pelo Estetia CRM (Doc-CRM) — produto SaaS que vende pra MESMA pessoa (dono de clínica) e já faz SEO. Há sobreposição. Como os dois se relacionam (mesmo negócio? site é isca pro CRM? separados?) ficou em aberto — resolver antes de escalar o SEO pra não competir/confundir.
 
 - [x] **Step 0: Design no Google Stitch** — V1 "Premium" escolhida (vs V2 "Cinematic"); HTML em `Docs/stitch/b2b/v1-premium.html`.
 - [x] **Step 1: Mover demo Aurora p/ `/demo`** — `src/app/demo/page.tsx` + metadata própria.
