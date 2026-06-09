@@ -3,8 +3,8 @@ import { clientConfig } from "@/config/client";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Clínica Estética Demo",
-  description: "Demo para clínica estética",
+  title: `${clientConfig.clinicName} | Estética de Luxo`,
+  description: clientConfig.heroSubtitle,
 };
 
 export default function RootLayout({
@@ -13,16 +13,22 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html
-      lang="pt-BR"
-      style={
-        {
-          "--color-primary": clientConfig.primaryColor,
-          "--color-accent": clientConfig.accentColor,
-        } as React.CSSProperties
-      }
-    >
-      <body>{children}</body>
+    <html lang="pt-BR" className="scroll-smooth">
+      <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link
+          rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossOrigin="anonymous"
+        />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@500;600&family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&display=swap"
+          rel="stylesheet"
+        />
+      </head>
+      <body className="bg-background text-on-surface font-body antialiased">
+        {children}
+      </body>
     </html>
   );
 }

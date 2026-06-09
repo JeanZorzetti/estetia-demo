@@ -2,14 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-/*
-  Client theme tokens are injected as CSS custom properties by layout.tsx
-  from src/config/client.ts. Tailwind maps them via tailwind.config.ts:
-    bg-primary  → var(--color-primary)
-    bg-accent   → var(--color-accent)
-  To swap client, edit src/config/client.ts only.
-*/
-
 @layer base {
   *,
   *::before,
@@ -21,5 +13,32 @@
     margin: 0;
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
+  }
+
+  .material-symbols-outlined {
+    font-variation-settings: "FILL" 0, "wght" 300, "GRAD" 0, "opsz" 24;
+    vertical-align: middle;
+  }
+}
+
+@layer components {
+  /* Hero overlay: keeps text readable over the full-bleed image. */
+  .hero-overlay {
+    background: linear-gradient(
+      to right,
+      rgba(251, 249, 248, 0.92) 0%,
+      rgba(251, 249, 248, 0.5) 55%,
+      rgba(251, 249, 248, 0.1) 100%
+    );
+  }
+
+  @media (max-width: 768px) {
+    .hero-overlay {
+      background: linear-gradient(
+        to bottom,
+        rgba(251, 249, 248, 0.85) 0%,
+        rgba(251, 249, 248, 0.95) 100%
+      );
+    }
   }
 }

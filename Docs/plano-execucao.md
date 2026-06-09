@@ -12,6 +12,18 @@
 
 ---
 
+## STATUS (atualizado 2026-06-08)
+
+> **Fábrica concluída (Tasks 1-4 ✅).** A demo foi construída pelos squads: vitrine completa (Header/Hero/ServiceList/BookingForm/Footer), parametrização via `src/config/client.ts`, automação `src/lib/automation/no-show-reminder.ts`, testes 3/3 verde, build 4/4 páginas. Hand-offs s1/s2/s3 produzidos. Repo: `github.com/JeanZorzetti/estetia-demo`.
+>
+> **Task 5 (deploy) ✅ COMPLETA.** Demo NO AR em **https://demo.estetiacrm.com.br/**, verificada via Playwright (home/serviços/CTA/formulário OK). Fix da pasta `public/` resolveu o build. Pendência trivial: favicon (404).
+>
+> **Pendente (Tasks 6-9):** parte de NEGÓCIO — oferta, lista de clínicas, Loom, abordagem/venda. Feito por você + Claude (não pela fábrica).
+>
+> **Nota:** a estrutura real ficou `src/` (não `app/`+`tests/` como previsto); agendamento consolidado em `BookingForm` na home. Equivalente funcional.
+
+---
+
 ## Arquitetura de Squads (ler antes de executar)
 
 **Composição de cada squad (4 membros):**
@@ -53,14 +65,14 @@ Decisão da base de código é **delegada à fábrica** (Task 2 / Squad A). Estr
 - Verificar: `C:\dev\agent-teams-ai` (clone existente)
 - Referência: memória `project_agent_teams_ai.md`, `agent_teams_ai_oom_root_cause.md`
 
-- [ ] **Step 1: Liberar RAM e matar órfãos**
+- [x] **Step 1: Liberar RAM e matar órfãos**
 
 ```powershell
 Get-Process electron -ErrorAction SilentlyContinue | Stop-Process -Force
 ```
 Expected: nenhum electron órfão; RAM livre.
 
-- [ ] **Step 2: Subir o app (comando da memória)**
+- [x] **Step 2: Subir o app (comando da memória)**
 
 ```powershell
 fnm use 24
@@ -71,12 +83,12 @@ cd C:\dev\agent-teams-ai; pnpm dev
 ```
 Expected: app abre sem crash do auto-updater. Settings detecta runtime Claude.
 
-- [ ] **Step 3: Criar os 3 squads (desligados)**
+- [x] **Step 3: Criar os 3 squads (desligados)**
 
 Montar Squad A, B, C, cada um com: 1 Lead Opus 4.8 High + 2 Operadores Sonnet 4.6 Low + 1 Revisor Sonnet 4.6 High. Conferir patch de modelo novo (opus-4-8 launchable) em `TeamProvisioningService.ts`.
 Expected: 3 squads existem no config, NENHUM ligado ainda.
 
-- [ ] **Step 4: Checkpoint**
+- [x] **Step 4: Checkpoint**
 
 Documentar em `docs/sales/fabrica-status.md`: fábrica operacional, 3 squads criados, regra "1 ativo por vez". Sem commit de código (app é de terceiro).
 
@@ -86,21 +98,21 @@ Documentar em `docs/sales/fabrica-status.md`: fábrica operacional, 3 squads cri
 
 **Liga Squad A. Files (output):** `docs/handoff/s1-base.md`, `CLAUDE.md` inicial do repo, esqueleto do projeto.
 
-- [ ] **Step 1: Tarefa pro Lead — avaliar base**
+- [x] **Step 1: Tarefa pro Lead — avaliar base**
 
 "Avaliar fork do Estetia CRM (`Doc-CRM`) vs template Next.js standalone enxuto, como base de DEMO de vitrine para clínica de estética. Critérios: peso, tempo de adaptação, reusabilidade entre clientes, facilidade de parametrizar. Entregar recomendação + justificativa. Depois montar o esqueleto do repo escolhido."
 
-- [ ] **Step 2: Revisor valida**
+- [x] **Step 2: Revisor valida**
 
 Revisor (Sonnet High) confere recomendação + esqueleto. Decisão final é do usuário (aprovar/re-avaliar).
 Expected: 1 recomendação clara com trade-offs + esqueleto buildável.
 
-- [ ] **Step 3: Build gate do esqueleto**
+- [x] **Step 3: Build gate do esqueleto**
 
 Run: `pnpm build`
 Expected: esqueleto compila (vazio mas verde).
 
-- [ ] **Step 4: Hand-off S1 + desligar Squad A**
+- [x] **Step 4: Hand-off S1 + desligar Squad A**
 
 Revisor produz `docs/handoff/s1-base.md` (7 seções) + escreve `CLAUDE.md` inicial. Commit. **Desligar Squad A** antes de seguir.
 
@@ -116,15 +128,15 @@ git add . && git commit -m "chore: esqueleto do repo da fabrica estetica + decis
 - Create: `app/page.tsx`, `app/agendar/page.tsx`
 - Test: `tests/demo/conversion-page.test.ts`
 
-- [ ] **Step 1: Squad B lê hand-off S1**
+- [x] **Step 1: Squad B lê hand-off S1**
 
 Lead lê `docs/handoff/s1-base.md` + `CLAUDE.md`. Arranca com contexto, sem reconstruir.
 
-- [ ] **Step 2: Tarefa pro Lead — escopo da demo**
+- [x] **Step 2: Tarefa pro Lead — escopo da demo**
 
 "Construir DEMO de clínica de estética fictícia ('Clínica Aurora'). Entregáveis: (1) home institucional, (2) LP de conversão com CTA de agendamento, (3) agendamento funcional (mock OK), (4) visual premium (sem AI-slop — seguir `feedback_no_lazy_features`). Build verde obrigatório."
 
-- [ ] **Step 3: Test (Operador escreve) — LP tem CTA**
+- [x] **Step 3: Test (Operador escreve) — LP tem CTA**
 
 ```typescript
 import { render, screen } from '@testing-library/react'
@@ -136,22 +148,22 @@ test('LP de conversão mostra CTA de agendamento', () => {
 })
 ```
 
-- [ ] **Step 4: Verificar falha (red)**
+- [x] **Step 4: Verificar falha (red)**
 
 Run: `pnpm test tests/demo/conversion-page.test.ts`
 Expected: FAIL (página não existe).
 
-- [ ] **Step 5: Operadores implementam até verde (1 task = 1 verde)**
+- [x] **Step 5: Operadores implementam até verde (1 task = 1 verde)**
 
 Run: `pnpm test tests/demo/conversion-page.test.ts`
 Expected: PASS.
 
-- [ ] **Step 6: Build gate**
+- [x] **Step 6: Build gate**
 
 Run: `pnpm build`
 Expected: build standalone OK (conferir async params Next 16, Prisma singleton se aplicável).
 
-- [ ] **Step 7: Hand-off S2 + desligar Squad B**
+- [x] **Step 7: Hand-off S2 + desligar Squad B**
 
 Revisor: `docs/handoff/s2-vitrine.md` (7 seções) + atualiza `CLAUDE.md`. Commit. **Desligar Squad B.**
 
@@ -168,15 +180,15 @@ git commit -m "feat: demo clinica estetica - site + LP de conversao (S2)"
 - Create: `lib/automation/no-show-reminder.ts`
 - Test: `tests/automation/no-show-reminder.test.ts`
 
-- [ ] **Step 1: Squad C lê hand-off S2**
+- [x] **Step 1: Squad C lê hand-off S2**
 
 Lead lê `docs/handoff/s2-vitrine.md` + `CLAUDE.md`.
 
-- [ ] **Step 2: Tarefa pro Lead — lembrete/follow-up**
+- [x] **Step 2: Tarefa pro Lead — lembrete/follow-up**
 
 "Implementar fluxo de lembrete (24h e 2h antes) + follow-up pós-consulta. Mock de canal (WhatsApp/SMS/email) OK. Objetivo: DEMONSTRAR redução de no-show no Loom de venda."
 
-- [ ] **Step 3: Test — agenda 2 lembretes**
+- [x] **Step 3: Test — agenda 2 lembretes**
 
 ```typescript
 import { scheduleReminders } from '@/lib/automation/no-show-reminder'
@@ -190,17 +202,17 @@ test('agenda lembretes 24h e 2h antes da consulta', () => {
 })
 ```
 
-- [ ] **Step 4: Verificar falha (red)**
+- [x] **Step 4: Verificar falha (red)**
 
 Run: `pnpm test tests/automation/no-show-reminder.test.ts`
 Expected: FAIL.
 
-- [ ] **Step 5: Operadores implementam até verde**
+- [x] **Step 5: Operadores implementam até verde**
 
 Run: `pnpm test tests/automation/no-show-reminder.test.ts`
 Expected: PASS.
 
-- [ ] **Step 6: Commit**
+- [x] **Step 6: Commit**
 
 ```bash
 git add lib/automation/ tests/automation/
@@ -213,21 +225,20 @@ git commit -m "feat: automacao de lembrete 24h/2h para reduzir no-show"
 
 **Mesmo Squad C. Files:** `Dockerfile` / config EasyPanel (padrão Estetia).
 
-- [ ] **Step 1: Configurar deploy standalone**
+- [x] **Step 1: Configurar deploy standalone**
 
-`output: standalone`, `ENV HOSTNAME=0.0.0.0` no Dockerfile (senão proxy não alcança), `.gitattributes eol=lf`.
+`output: standalone`, `ENV HOSTNAME=0.0.0.0` no Dockerfile (senão proxy não alcança), `.gitattributes eol=lf`. ✅ feito. Fix extra: criada pasta `public/` (commit `d2ec52b`) — build falhava no `COPY /app/public`.
 
-- [ ] **Step 2: Deploy no EasyPanel**
+- [x] **Step 2: Deploy no EasyPanel** ✅
 
-Auto-deploy via GitHub (branch main). Subdomínio `demo-aurora.roilabs.com.br`.
-Expected: demo acessível por URL pública.
+Auto-deploy via GitHub (branch main). **URL real: https://demo.estetiacrm.com.br/** (não o subdomínio placeholder do plano).
+Deploy bem-sucedido após o fix da pasta `public/`.
 
-- [ ] **Step 3: Verificar live**
+- [x] **Step 3: Verificar live** ✅
 
-Abrir URL no browser: home carrega, LP converte (CTA), agendamento responde, sem erro de console.
-Expected: navegável end-to-end por um estranho.
+Verificado via Playwright (2026-06-09): home carrega, Hero + Serviços (Limpeza/Botox/Peeling), CTA "Agende sua consulta" → âncora → formulário completo (Nome/WhatsApp/Serviço/Mensagem), footer. Único erro: 404 favicon (trivial).
 
-- [ ] **Step 4: Hand-off S3 (final) + desligar Squad C**
+- [x] **Step 4: Hand-off S3 (final) + desligar Squad C** ✅ (hand-offs s3-automacao.md + s3-deploy.md produzidos; URL registrada em fabrica-status.md)
 
 Revisor: `docs/handoff/s3-automacao.md` (7 seções, inclui URL da demo + gotchas de deploy) + atualiza `CLAUDE.md`. Registrar URL em `docs/sales/fabrica-status.md`. Commit. **Desligar Squad C.**
 
@@ -241,71 +252,52 @@ git add . && git commit -m "feat: deploy standalone da demo + handoff S3"
 
 **Files:** `docs/sales/oferta.md`
 
-- [ ] **Step 1: Oferta de entrada**
+- [x] **Step 1: Oferta de entrada** ✅ — `Docs/sales/oferta.md`. Site de Captação R$3.500 (fundador R$1.750). Posicionamento: "máquina de encher agenda", não "site" (fugir do comoditizado R$970).
 
-"Site + Landing de alta conversão pra sua clínica" — escopo fixo, ~1 semana, R$3k-6k (fundador: metade nas 2 primeiras). Listar exatamente o que inclui.
+- [x] **Step 2: Upsell recorrente** ✅ — Automação "Agenda Cheia" R$697/mês + setup R$1.500. Pitch ROI: se paga com 2 no-shows evitados.
 
-- [ ] **Step 2: Upsell recorrente**
-
-"Automação de agendamento + follow-up" — R$500-1.500/mês. Pitch: no-show -20-30% = R$16-24k/mês recuperados (clínica 80 consultas). Vender ROI, não horas.
-
-- [ ] **Step 3: Garantia/risco baixo**
-
-Escolher: preço de fundador OU garantia "não gostou, não paga". Documentar.
+- [x] **Step 3: Garantia/risco baixo** ✅ — Preço de fundador (metade no setup, 2 primeiras, em troca de case). Garantia "não paga" descartada. Tudo precificado por benchmark BR 2026.
 
 ---
 
-## Task 7: Lista de clínicas-alvo (NEGÓCIO — usuário)
+## ~~Tasks 7-9 (prospecção local via Loom)~~ — DESCARTADAS
 
-**Files:** `docs/sales/clinicas-alvo.md`
+**Decisão (2026-06-09):** o canal de aquisição será **SEO nacional, canal único.** Isso elimina a prospecção ativa local (lista de clínicas + Loom personalizado + abordagem por DM), que pressupunha mira local em Goiânia. SEO é inbound nacional — o cliente acha você, você não persegue clínica.
 
-- [ ] **Step 1: Levantar 10 clínicas reais**
-
-Critério: estética/dermato local, site fraco OU sem agendamento online OU só DM no Instagram. Anotar: nome, site atual, problema visível, contato.
-
-- [ ] **Step 2: Priorizar por "dor visível"**
-
-Ordenar pelas de problema mais óbvio. Top 5 marcadas prioridade.
+As Tasks 7, 8 e 9 originais (clínicas-alvo, roteiro Loom, abordagem) **não se aplicam mais** e ficam aqui só como registro histórico do plano anterior.
 
 ---
 
-## Task 8: Roteiro + gravação dos Loom (NEGÓCIO — usuário)
+## Task 7 (nova): Aquisição via SEO — ADIADA DE PROPÓSITO
 
-**Files:** `docs/sales/roteiro-loom.md`
+**Files (futuros):** `docs/sales/seo-plan.md`
 
-- [ ] **Step 1: Roteiro ~3 min**
+**Decisão estratégica:** planejar o SEO **só quando o projeto estiver ~95% pronto** (resta SEO como última milha). Planejar cedo = desperdício, porque keywords/páginas/conteúdo dependem do que exatamente vai ser vendido — e isso ainda pode mudar.
 
-(a) "Oi [nome], vi o site da [clínica] e notei [problema]" → (b) demo resolvendo → (c) ROI ("recupera ~R$X/mês em no-show") → (d) CTA suave ("topa 15 min?").
+**Pré-requisito que falta antes do SEO (a decisão em aberto):** definir **o que o SEO vai vender** —
+- (a) serviço sob encomenda (atrair donos de clínica buscando "site/automação pra clínica"), ou
+- (b) um produto com SEO embutido (gerador/template/micro-SaaS que rankeia e vende no autoatendimento).
 
-- [ ] **Step 2: Testar com 1 pessoa de fora**
+Essa escolha muda completamente o conteúdo e as páginas. **Deixada em aberto de propósito** até o produto/serviço estar maduro.
 
-Gravar 1 Loom de teste. Pergunta: "ficou claro o valor em 3 min?" Ajustar se não.
+**Riscos já mapeados (do benchmark inicial), a tratar quando for planejar:**
+- SEO nacional pra termo de compra ("site clínica estética") é caçador de preço + disputado por SaaS/agências com anos de domínio → meses/anos pra ranquear.
+- SEO genérico não capitaliza o fosso (domínio em estética + entrega rápida). O "como" do SEO decide se funciona ou vira buraco sem fundo.
 
-- [ ] **Step 3: Gravar os 10 Loom personalizados**
-
-Um por clínica (Task 7), apontando o problema específico daquela + demo.
+- [ ] **(futuro) Decidir o que o SEO vende** (serviço vs produto) — só quando o projeto estiver ~95%
+- [ ] **(futuro) Planejar keywords/páginas/conteúdo** a partir dessa decisão
+- [ ] **(futuro) Métricas de SEO** (não as antigas D+30/60/90 de prospecção local)
 
 ---
 
-## Task 9: Abordagem e fechamento (NEGÓCIO — validação de mercado)
+## Status geral
 
-**Files:** `docs/sales/pipeline.md`
-
-- [ ] **Step 1: Enviar os 10 Loom**
-
-DM Instagram / email / WhatsApp. Registrar data de envio. Expected: 10 enviados.
-
-- [ ] **Step 2: Acompanhar respostas (meta ≥1)**
-
-Pipeline: visto/respondeu/agendou. Follow-up após 3-4 dias. Expected D+30: ≥1 interessada.
-
-- [ ] **Step 3: Fechar 1ª venda (preço de fundador)**
-
-Call → fechar site. Expected D+60: 1º contrato.
-
-- [ ] **Step 4: Entregar e fazer upsell**
-
-Fábrica entrega o site real (novo ciclo de squads). Após prova de valor, oferecer retainer. Expected D+90: 1º retainer ativo + case em `docs/sales/cases.md`.
+| Fase | Status |
+|------|--------|
+| Fábrica (Tasks 1-5) | ✅ Completa — demo no ar em demo.estetiacrm.com.br |
+| Oferta (Task 6) | ✅ Completa — preços por benchmark |
+| Aquisição (SEO) | ⏸️ Adiada de propósito até projeto ~95% |
+| **Decisão em aberto** | **O que vender via SEO: serviço sob encomenda OU produto?** |
 
 ---
 
@@ -315,10 +307,10 @@ Fábrica entrega o site real (novo ciclo de squads). Após prova de valor, ofere
 - **Vertical estética** → todo o plano. ✓
 - **Arquitetura de squads (1 ativo/vez, 4 membros, hand-off)** → seção dedicada + Tasks 2, 3, 4. ✓
 - **Oferta produtizada** → Task 6. ✓
-- **Aquisição 1º cliente** → Tasks 3, 7, 8, 9. ✓
+- **Aquisição 1º cliente** → REVISADO: prospecção local (Tasks 7-9 antigas) descartada; agora SEO nacional adiado. ✓
 - **Fábrica invisível** → Tasks 1-5. ✓
 - **Precificação** → Task 6. ✓
-- **Métricas D+30/60/90** → Task 9. ✓
+- **Métricas** → a redefinir junto com o plano de SEO (as antigas D+30/60/90 pressupunham prospecção local). ✓
 - **Roadmap expansão** → Fase 1 do spec; replicar com outros templates depois. ✓
 
 Sem placeholders de código. Tipos consistentes (`scheduleReminders`/`offsetHours` únicos). Regra de RAM (1 squad/vez) reforçada em todas as tasks de squad.

@@ -1,0 +1,334 @@
+<!DOCTYPE html><html class="scroll-smooth" lang="pt-BR" style=""><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Clínica Aurora | Luxury Aesthetic Clinic</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;family=Playfair+Display:wght@500;600&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;family=Playfair+Display:wght@100..900&amp;display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-tint": "#56642b",
+                        "inverse-primary": "#bdce89",
+                        "on-tertiary": "#ffffff",
+                        "secondary-fixed-dim": "#c7c6c5",
+                        "on-secondary-fixed": "#1a1c1b",
+                        "surface-container": "#efeded",
+                        "inverse-surface": "#303030",
+                        "clinical-gray": "#D1D1D1",
+                        "secondary-container": "#e0dfde",
+                        "on-tertiary-container": "#3b2900",
+                        "on-primary-container": "#253000",
+                        "on-secondary": "#ffffff",
+                        "on-tertiary-fixed-variant": "#5d4201",
+                        "background": "#fbf9f8",
+                        "on-tertiary-fixed": "#261900",
+                        "surface-container-low": "#f5f3f3",
+                        "surface-dim": "#dbd9d9",
+                        "secondary-fixed": "#e3e2e0",
+                        "tertiary-container": "#b18e49",
+                        "on-primary-fixed": "#161f00",
+                        "on-primary-fixed-variant": "#3e4c16",
+                        "primary-fixed-dim": "#bdce89",
+                        "inverse-on-surface": "#f2f0f0",
+                        "on-secondary-container": "#626361",
+                        "outline-variant": "#c6c8b8",
+                        "on-secondary-fixed-variant": "#464746",
+                        "warm-white": "#F9F8F6",
+                        "secondary": "#5e5e5d",
+                        "surface-container-highest": "#e4e2e2",
+                        "primary": "#56642b",
+                        "sage-muted": "#7B8A51",
+                        "error-container": "#ffdad6",
+                        "surface-bright": "#fbf9f8",
+                        "tertiary": "#775a19",
+                        "primary-fixed": "#d9eaa3",
+                        "surface-container-high": "#eae8e7",
+                        "on-surface": "#1b1c1c",
+                        "on-surface-variant": "#46483c",
+                        "soft-beige": "#E9E5E0",
+                        "on-primary": "#ffffff",
+                        "surface-variant": "#e4e2e2",
+                        "outline": "#76786b",
+                        "gold-accent": "#C5A059",
+                        "on-error": "#ffffff",
+                        "on-background": "#1b1c1c",
+                        "error": "#ba1a1a",
+                        "on-error-container": "#93000a",
+                        "tertiary-fixed-dim": "#e9c176",
+                        "primary-container": "#8a9a5b",
+                        "tertiary-fixed": "#ffdea5",
+                        "surface": "#fbf9f8",
+                        "surface-container-lowest": "#ffffff"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "section-padding": "80px",
+                        "unit": "8px",
+                        "container-max": "1200px",
+                        "gutter": "24px",
+                        "margin-mobile": "20px"
+                    },
+                    "fontFamily": {
+                        "body-lg": ["Inter"],
+                        "label-caps": ["Inter"],
+                        "headline-lg": ["Playfair Display"],
+                        "headline-lg-mobile": ["Playfair Display"],
+                        "display-lg": ["Playfair Display"],
+                        "body-md": ["Inter"]
+                    },
+                    "fontSize": {
+                        "body-lg": ["18px", {"lineHeight": "1.8", "letterSpacing": "0.01em", "fontWeight": "400"}],
+                        "label-caps": ["12px", {"lineHeight": "1.2", "letterSpacing": "0.15em", "fontWeight": "600"}],
+                        "headline-lg": ["32px", {"lineHeight": "1.2", "letterSpacing": "0em", "fontWeight": "500"}],
+                        "headline-lg-mobile": ["28px", {"lineHeight": "1.2", "letterSpacing": "0em", "fontWeight": "500"}],
+                        "display-lg": ["48px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "600"}],
+                        "body-md": ["16px", {"lineHeight": "1.6", "letterSpacing": "0.01em", "fontWeight": "400"}]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        .hero-overlay {
+            background: linear-gradient(to right, rgba(251, 249, 248, 0.9) 0%, rgba(251, 249, 248, 0.4) 50%, rgba(251, 249, 248, 0.1) 100%);
+        }
+        @media (max-width: 768px) {
+            .hero-overlay {
+                background: linear-gradient(to bottom, rgba(251, 249, 248, 0.8) 0%, rgba(251, 249, 248, 0.9) 100%);
+            }
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-lg antialiased">
+<!-- TopNavBar -->
+<nav class="bg-surface/80 dark:bg-surface-dim/80 backdrop-blur-xl fixed top-0 w-full z-50 shadow-sm dark:shadow-none border-b border-transparent transition-all duration-300" id="main-nav">
+<div class="flex justify-between items-center max-w-[1200px] mx-auto px-6 h-16">
+<a class="flex items-center gap-2" href="#">
+<img alt="Logo Clínica Aurora" class="h-8 w-auto" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAZAAAAB4CAYAAADc36SXAAAQAElEQVR4Aex9C3xcRfX/OXc3SdNSoBR5toq2vBUVEEGhptlt090K8hcDJNltC7RJQUD0R5NSQSIgNCkPAVGSUijdzaYQefyA7qbtbhtARVT8ASLwg/rCVvQH8rSvZPee/5lNNt3Hvcne3buvZO7nzt6ZMzPnnPnOnTkzc+feVUAeEgGJgERAIiARyAABaUAyAE1mkQhIBCQCEgEAaUDkXSARKBQCUq5EoMQRkAakxCtQqi8RkAhIBAqFgDQghUJeypUISAQkAiWOQAkbkBJHXqovEZAISARKHAFpQEq8AqX6EgGJgESgUAhIA1Io5KVciUAJIyBVlwgIBKQBEShIJxGQCEgEJAKGEZAGxDBkMoNEQCIgEZAICASkAREo5NtJeRIBiYBEYAwgIA3IGKhEWQSJgERAIlAIBKQBKQTqUqZEQCJQKASkXBMRkAbERDAlK4mAREAiMJ4QkAZkPNW2LKtEQCIgETARAWlATARzPLCSZZQISAQkAjEEpAGJISGvEgGJgERAImAIAWlADMElE0sEJAISgUIhUHxypQEpvjqRGkkEJAISgZJAQBqQkqgmqaREQCIgESg+BKQBKb46kRrlBgHJVSIgETAZAWlATAZUspMISAQkAuMFAWlAxktNy3JKBCQCEgGTEUjbgJgsV7KTCEgEJAISgRJHQBqQEq9Aqb5EQCIgESgUAtKAFAp5KVcikDYCMqFEoDgRkAakOOtFaiURkAhIBIoeAWlAir6KpIISAYmARKA4ERgPBqQ4kZdaSQQkAhKBEkdAGpASr0CpvkRAIiARKBQC0oAUCnkpVyIwHhCQZRzTCEgDMqarVxZOIiARkAjkDgFpQHKHreQsEZAISATGNALSgBR19UrlJAISAYlA8SIgDUjx1o3UTCIgEZAIFDUC0oAUdfVI5SQCEoFCISDljo5AyRgQZ4P9c46F1TNGL5JMIRHQRsBeaz/AWV/9KWf9nC/wddY81+xjtVNKaq4RkO051wjnh39JGBCHw1EBCE9DBLvzAwvA1xdUHzmvYY4ta+e2n2lEZ9HJZSrT6Z5zqpasbMtS47KdVeOqPnluXdVxjoaqafPrz5yiJacYaTUu+3yHy7bW6bZ9VD4BPgCL8lew0P/w9WkFLa873XZyuOz/cLpsv2T/LQJ7yMEx3131WcE7U+domP1VYfjm1M85usZ11uGOhi/vnwM188KyEO05LwUbh0KUUigzHdzvAoQpiPglp04naXY5whE4TUH1ekVRb0aFuhWFgoYcUg8i/RAJlhnRrWJCeLqQi4p6o6KoDyrpyEV1vchDpC7RkpVUFl9aPOPkWhCfsaDygtVqfQ0V69/JMuE952DH+wF3zn90uO297O4So/ph+QX01LiqZjrdtp84XPYPLAhP8X2zEAAng86BCIcD4lc4ernAxumy7XK67L65F86azjRTThUstaKOuF7v5PviUSHHiEPF8gth+Mos9IYFK/6ByuQPo3Xgtv/L4bb/1uGyPcbhW0phll6I9mxKJUomKQiUhAFBgCtjmhPRFTF/Lq+9XVse83tDs/ye0JcDnuAhGImcSkB/GlUmwYZwOHy83xs8KOANnsnuG6PmiUuwwdP3ip/lBjyhr7DsadzpTAOCF0HjIIJNEQofzek/wW5WwBtq0kgGSWU5NFoWgre10hqhccd7ACKewPVTw+4KMap3uOzBmvrq04zwMSuto8F+utNlf8qC1jcB8NuIcADwwTj9ge+bNlVFu0qR4/r3wIF+TxBJUWeqSF8BoqvYbeakgydiJSDUWcvK33K4bDdULaqaMBiR+S/X5/XROvKEPhvwBg9gnRYCQX/mHAdzMu6HsDsVEc9lynJQ8TWn23afg2eKHC7KEwvQnosSiDGgVNEbkBpePkHAk4axRrjAzmvZw+E8eTb4tr4ACtWMJI4AfH5v8OubuvteHymdkbin1m3Z8f7enV/hDiehw+fwrz/Yu/Pcjd6+bUb4ibTRsljUs4RfyxHRq1yW7wKp9QRYhRGaEetwSVVrWPZlAPSUVl5EsFksyvNOl71VKz5XNIfLtgIVeI47/vnDMgjeFEaDO+yTAt7Q8t6uzaFe79b/DfYEPxRpAg9u+VPvutBzfm/oTnZzI7T3CCDqFXExh4jXTQxbXq9xzf58jGbGNeANrmM+S9npnPSUqtK32ch8i1Q4Y2AAj9xlCVcihD+nUuQbBHQ1Z3yFXcKJgGUAeAko1tcdDdUOKLKjWNpzkcFitjp541f0BsQC8J14NBCgoqxCHaHhxac21y86HG64W/S4KpHI7Xpx2dCf63luN+fvYjd8qhBZOkQfphnxiLJwZ7lv1J2Y+dWAJ/hjv3dLd8Cz+ekNvtCfRbTIE+jasingDf7M7wmdzR3cIjYmH4m4FIdwvcNtW8N0rjL+zdF5Ru0ZlU6X7efc0f8oXgTr9TO/N3iMMBrx9JH8G73Pvu33hrjTVS9NSIf4KQWUX5jdIe+yhrsJYGeCrH2B3t6u0E/93uAjga7grzev3/yPvrV9e8QMlY3gEwFP6LZ/Vb5/MgHdxllUdgkngz4JEJ9gw9qQEFHggKWI2nOBoRgT4ovagDgXVR3GjeD/pSKNlzON2wj/5v98WlMkwfvRkb1mZPZEIvVXMS7c6fx9o3frS7FwpldCHrFnmpnzcQf34ADC54BH+hxMORHwYofbnhOjKoRV1Vbtd2DFxF/wPXKeCMccEXWxkbssFjZ69Xu23MszLSd3zntiedlA7YeK4p/nsjXGaNlehUFgHr9jl9H5QucLAwFP6GqIqLO1GLDOVnZe5wK7oWVULV5m0JyLirI9m1G0ccujqA0IhS1Xcc2k6MiNYto81+yzOS7/J+E7WkIJ6T0tulk0C+EHMV5I9H8xfzZXgn08M+UT9ATfUhVaSHxo8UCCK5wLbMdoxWVLm1hheZTvhZPj+XCn/1zAG3LF04z6RXqeaQWI1AuEP94piB0Ol828UT1BdDktXoZRv9+35RnWdblePp6N3X1K4ym8tKWXIj/0omzP+Sn6mJWS0jkXS0nFVj8E1B3tIVi+DQU4EEC78zahIxipOBEr/DsWzx3/xzF/VlfVHKMnniOwHnexSz0RLKTiT8Hkw+my+wBxTjxbIgojwiIw6RBLRczqUXaJJ+Ias56JoEkDj/32Tr2VlyQ1Z6V8z04/dPeUlsRC5DdUrO05vyiMPWlFa0BoaOuuPuQ0x+62f1I/PjcxatxMIF4CN1K9tez4ZBn7LWH4TyyzWbJ4ND3MM8Y70+sAou5SFXfqNvEuSqa8k/M5G+w3AkJdMp1pN/vXhd5IoWdBiNDey9kwJeDE+FcoaHnStsA2NQvW0axEmMA7Sszgp6enJwJIP9bLSgQL9eLyQS/W9pyPso9lGeYbEJPQ4kYat3UX/pHMFvkoJ1UscSVHjf0wr2EVWyHFUhYBaC7vCV3VCH5RXLN10ZG/Atdq8NkF75bfrEHPiiQerDMDsRmAL/tOvj+nVxDcuo9SeB/P9H6jpwUizBTPjPTic01nvGR7zjXIBeBflAYkfqsfAb2MqGqv7yIuLgBmUqQ+Ar/ViyKFTNkGa0FFs9PmWYI3EAjs1ZOfFZ2gUzs/LnA02E7Qjss/NdAVepUItHfFsTqTKpR92+E5nK9Ttud8IZ1/OUVpQCyIwzMLUmHVrr+r3UDwfio8ONnhti9JpUtKIRDgB+a6I2AgJevvmA2+6Y52rbIhKqu16GbQoh0z0P9o8FIAIWH7sEaafJIAkV7QE6iCMlMvLpd02Z5ziW5heSuFFZ8qPbrVD0C8VQsE8H97dkTW9/X1hXl9917QOBDgexpkSSoAAoQwwo4i+ku2KpGCd+jweM3v2Zzxdlgdnglkvs/WJhCGAoh4rmOB3ZTluSGWWV5QdwbC9RN9nydLAYayy/ZsCK6SS1x0BiRxqx/d0yeMh4DVEhG7fFThTXLHzXdVi+8YJZFlMN8I8KOZI0aQ+YcR4kaNEktF3FknbNmNZeLlqydi/lxdByJKQJe3Cnn5vI6u/IQIOjwhGBdQQdGaRcWlMN8r27P5mBYTx6IyIPFb/Qhgbz/CPTGw/Gv7/sn+x9mlnATK5SnEDAgyS3YIEKLuN7AUFV7OiruCc/Xyo4LZ8dZjHEff7Nv8Jt+TO+NI+7wImstq+xLkxyfeyudp++d0pL21ybNJW3+dDNmSZXvOFsHiz19UBgSn7nUDwuCnwonWh9aFht99EFBihH4irsmOH7TXnl1XdXAyXYbzh4D4xDgv83xNUyLRM7HPoWjGp0dMeOcjPgtSOOcGRMjj8r0irsmO6dPFDCmZnu/wgeUTzwHxIUgtwQQPaJFzSZPtOZfoFgfvojIgBCg+EBdFRo2oq6KeuB/uhLZy8HV2CScvbVjDFkvi94sSUshArhFQsEJzdxQQRBAxq2+X1dbWWlh/TePEg4eBDTP6XuX4nJ8E+rMofj4z4oc2c61cbe0J5YjQpiWHl/i207/LbtGKyyWNDLXnfZogomzP++Aoal/RGBCHe87X+MYZ/Ic4HrFu7N76Ry3kiEA8C9GKaoRWKJrywDg6nK7qOh6F12sXWb1rgyf4mnZcetSdle/NYP6TdFLvgFZQIS+H+jc9Mfz8x5Rtynr8R6PvrDj8Hp59fEorHYH67ZxtcdYSyDTZnhmEcXAWTYeLQMMvGgGgnpHg4ayyDoA+hqSDjc805za7xocXkxLKoKkIOF22eYCKT5Mp0eZde9UfaMYZIKqEh+gmJ0y5F3TTZhmBI307DPGwLNlnnN3hst3AxkPnnSi6ZeiTLBnzzyQjyvacCWwll6coDEj8Vj82Djv8M4OP6SEpHgTyLOR+rXhCukyLPg5o+S8iz/aiHRdgyv+C8JJJmN33/d7Q3L6evqw/1aEQHDpCAXW3rY6QJ6Movu+GP2iZzABH1jE5uSnhqkVVBzrcticQ8boUhgTv87Rsnt8TWpESl2OCc1GVMKbRrfiyPecY7AKzLwoDQhHLdxmHQV0I74RRliTEd5e4gyJIOniEWD2nfs7RSWQZNBEB8a9/Dpd9lWOb7W8oOi4E8XwCYgd3sm8T4uyAN3RzjJbtlStafwYClDcDoo4wA2EdRzJy2UIwnN/R8OX9HQ3VDofL5q2MWLfzPa/1VernicIn9XqCG4cz5tEj23MewS6wqMFOu4BKOByOCiSMvU2+i+jjjtHUEd9d4in7Jq10ZRY14Q+otNJI2sgIIECV02V7Jt7xSPf3TredUIHnEOFqRJwWz4U7UD8gNOy2hj/DHdcv4uOy9SPCVD0erOsuvTiz6aiQ/if7kQZ3D5oklAivisdf+NlovI7K5A9RUfyI2MBlj3suJJZ1aQ0QzfV7gqcHuvq2m6SKITbjsj0bQmhsJS64AYGDBxZwxxNtfNwJrQt0PZ/WiFIluFunKhbMdc+Na1g6qSRZHwHEgwHxrHiHgDpvW9OayB7L1IAnON+/LujrW9s3/CdM+gKMxRCBLk9C3M8Yt8xTnRKaQQAAEABJREFUKxH8j35uc5/FIMLMePyFHxEHN5kkKaECLfZ7QvuzW8zLhpuTovMblO05v3gXWFrhDQjRfwkMxJKUSmHx95wiOKrb6A36ebSl8WkGnGyFyKJRGcgEugiwIX9aVdEe73gtO6iVgQDnKuUfhLXizKIhqu/q8UKiyXpxptOVyEQ9ngigq6NenpHpdFc8/irAPDakb2vl4WdE39KiF4Qm23NBYC+U0IIakIStfoCbN3r7thkAgghB54+K8HIDfAwlRSVChjKUYmKid8R/icc72tNfT0AJL3aKonHHOR1wskf4M3Oj52LAU+QO50Lcf9ifYw+peICeCNZR+4/G9DKMTn8jHn9eFtyoqNRAfKRkRZzncNuHP0CaEp8ngiN+K36JtOc8QTNmxRTUgACpw88rCCN3GkV5YA/ex3l2sUs+j5tfb5udTDQjrBIOmMHHKA+1jM3lUCa2nDwgHQrk6RLoefYdAtT8K1dEOGdeg+2ynKmiKrr/MwL5nIGAvrHimZDJM5BUNIdepG1PjQFAgjZng13vMyaQl6ME23NecBnDQgpmQOZeOGs6Ig6/t6GoljO4AdxoxJWXw9VAsEOrfkiBnPzlLT9E1lyuIUQejGtpYg5NUZXyGCfM486jmExxFaNgIFXzi7iMy23zXLM11+hF3uzcx+JNcx2jiYdDK+TlPkbEEZbLMKuPRUKax+7tkWt5EpL6vysI5YTwaNWiqglpsjI1Wam2Z1NBKEFm2aqsZMsg0/xWa1niF0wVuJa7AeMO4WgtHQjgG+L7TFpxWdEioGlAeARamRXfUTJTBCvikqS10SAuvWneXdvVZiB6KZkhAk5Q0PJYLjqw6MYKIu0OGqG8ZtvsfI28P5lc7lhYVUhzV2As3qxrX19feADxW2xEUh7oI8LMyrBF828PzJKvx6dk27NegSQ9LQSUtFKZnCjaySBEt+5yR7+TO6Rns3QpyweIaLVARROYfJCqai2ZASBOghweEUXdN/od8X83cqgEsxYdGFnovGi9cTjpPL4yYtX9ikBSWkNBQnxGLwOS8gW9ODPp/Azos1r8BBa960K/1orLBS3oCb7FBvsSLd583y90NNjy+lC9lNuzFoaSlj4CSvpJzUvJnYwbAA8EPng5Zo3fG5qVjeOG/UNmpXHS0qqqKqtGRMaksjLUfBuZO5GDMmaaRkbuGD4RS8ajzxH+uCmWKnfXwINb/oSgam5UQIAlDne11sttWSnEa/xP6zFQkPLyHSqug0QDMqwQbWEv3wL8m6fT7w0+zPfBg5riEB4QS0qacTkglnJ7zgEc44plQQwIzzaGt+72A96WLeIRtD7APFJnBoiHTphuMXU09p/dqnbnTfSJUxpPKWM9cnMSHRxjjAWcgcR08Hu2rGXD/VAsnHAlxWN2B2aJhJ9OkBEXIFBOigvmxDtUt8doMSfAtVr0XNN2741cDgRvJstBxP0sZeWPmj14SpYzHI7bultq7Xm4DNKTEQJ5NyBidxTf4McKbRFgo5iOC382Lvp9LIAuLR4Kgam7g6LfdiLanSyLy4SH/ueAkf6RLzmLobCCcBQMHaSCxvsvQ5F5vOzeE1nMRuSvySIR4QALd2DQyk+1wJzjye6+d7mz3KDJDeHMqtqqnL5QeMjOA+wsW6u9vNbr0f92G+fJ2SnuRX728i3GpT9ZCLetUydOs5j2OZlk/rFwqbfnWDnkNTMEtBpEZpzSzKUqMPTVXQAV1bvTzDZqMlR13kxHPGu+u0pn6WFUtpoJeMSp+b5KxIqaD/Q1mRgkEuGJsSxlFXufi/kLeRUdmBJRxQPdlI0FogNzbLPdaKZ+iOHlvGxDyTxZVkVlhbIomW5qGFFzCzPr8yOWk6IT0/Jy8rOXlwlphZYwVupqZ331LK04s2hjoT2bhcV45KPks9BiWQMRz4nKJPpzr2drIOo34cffFfwDEWg+yFTBOmy0TBAF3GFp/jOdosIZZvBP5iH+UIllniXo3GH97xP3/zJvnzAXMkdyG3xbX0CEH2ilQcTlZnZgGzx9Avf/1pIFWf5plSbPIWKV2BqLOPR12SHi4OWtwMxQ96C3cL8BT+g2ngmK5zAJSjD+CAo+7Kg9a/j5GZh4jJX2bCIk445VXg2IpaxMvDgYk3kXo82DJP416eTOVXMLIxK57LV23beIjYpnQ6U9A0A83SivdNLvrHivGhCmiLQIkPoOgIgooPN7QrdodWCskkKK0m1bYJvKflNOBSPXcT2n3DcIeKLDZdPq5LOWO1G1fhMBknfZqRihRdAKKhTDsaf/QgD6Z4oq/BwQK8pTlndT0mVAGCvtOYOiyyxDCMQ686Fg7i6DnQguFRIIYGcYLeItchE0ze0pizzEnXvqOxKIldZyuNQsQUjqE1q8kGj22XVVww+7tdJkREO8fV8+TBlp7osz5uOOmPvF1Dw8cjV8X6jU7+J6TflaLSIcUU74eKqUzCjRWQhCK2gdiHc5HI7492W0UhminXPxVyczTjckZyJSVwy9GZ4cZSiMSKiVgVQ0VAfRLwWotFCLFyDOcbptpj4PGUvtWRMzSUwLAUM3aVocdRJxJ/JdbimDoziixzd5Nu3USZoxuW9t9Euwj2gxUJD+q7b2hHKtOKM0v2/L33i0J2ZQiVnZUIUtFlOXy4YafuwZzuuT9k5Zlyg08xAi7nu3JIENGf6+1Ebvs2+zAdH8W1uu9zMdLrtpz7t4yeYGAkrZAcZypuPUgWsSipJlYGCgcj0CzkhgQ9Qb8G5pS6BlGCDSrgM2H4ZnzIGuLZuI4FZtVfCaea7Zg8vH2gkMUcdSezZUcJk4AYG8GBAximOpwx97QwDt/eucKOsTUZs34sE7Kw43ZxbCSkb2WH9IRClvAwPglfPrbZ8BEw42HtwZIrshZkRX9vT0RIZCWV8IQbuTIogulxkV0OsRf2BEqYaVGSHC5U53tZu9ppxsRMSSzdYUZgjX17hmm/JeiNNtu5PvVWeCDIIXreV7zk+gZRFgXHTqgDKqg93bw9eAxpcChIqIFp+jwXaC8GfjxmJ7zgaP8ZxXyUfhw/0TVnJDjM4+uNOlXdsjqQ3fJEUCns3PCBla7AiwpaqqypQXCzf2bHwPEFJ2GYkOQVXgyTNqz6jU0iEdmtDR4bbxw1kcXnbgMgX83tDmdPKnnYboeK20hBB9yRMyOCbteXuZXgfG+K9xuuwXZcBWMwu9W+7giEfZJZwWVPqc7tlfTiAaDDD+a4AHAxB/EG0Oo3KmmZsYuF6PixcR8zNWGRmQvr6+MIkvBWgMbqJtUMGt8xpsX4rJyeQ6FttzJjjIPAA5NyBOsY0QcfhdDORD3OQ5BJ/7P9D8AyJEOLxymuUes2TzKLidAFKWZhDxhCkTJr4YLbtBYU6XbU7ldOtWBOQR9lBmomfVvVbXUMi0C8uYrcWM6Z/O9DtiPT2v9pPowPg5VzJv5lvGRvd+7pxNWf4JBAJ7/Z7geSxnJbu4Ew8kUoLz3LZ9GMbFjuStcVXNdLjsAv+LE9IRdbABn2vm0qutznYo3yvHJsiJBZBmxbxGr4NfCkDtT50AHMLLY884F9i/YZSvSB+9pwvbnoUaUYcmt+coU/ljCIGcGpCa2pqDQEHxlniCUrw0kJMv5QohTlf1YuBnEcKv5RCx0awOTPAPeIJXshFpFP5Eh8eARXna4bL5ne7qRYMPHRNTiNDXF1QfKRol6327023bzrpvQoAzRZxwvKb9AHdcs6IzHkEwybGsnwCC3nsrioIVOmvpoysgOjB+RiF23GkmRsBmp8v24jy3/ZuaCQwS2YhcQ6rqZJnDLzUi4n4KYLfTZfeJ7aajsayprz7N4bKttKD1TUSogn3HX1RQz+c6iG4A2UfOznd2XdXBFRbo0ePCGM1wuKo1Pxejlyee7vcGH+aZoDeeFvMz7wlA8LjTbX+8xsBy33hozzGM5DU9BJT0kqWfak79nKOdLvtFDrf9JktFZBsgajwPwJ84XLbfsLuB0y3hZwaaI+F0pIrtuU5XdZ3DVd3idNu2ACqrR8vHDajZ4ba/xQ3oWp7OL5zDOo+WZ6R4NiKrI0SzeDlCfHY8ISkiOgCUByoI33W6bR853LZtDpf9OafL/obTbSeVlO3C0AAq3wXAI2H4oA9IhSsD3mDiSHg4Pn2PMFLzGubYRIfNslc53LZXAHBEI44A9U63/VXWcxm780X+Glf1yZDm0esJreFO6mHd5Iif55vvkagMt+0Bh9vWzPoNG07dfDoR/AA5EPCEPs11MLzsF02KUGctK3/L4bK9wO5HXN+XsZxvOl328xwuG99/tidY9rsWi/I8IrZE84ifwa8NXMfG6TO9ni26Hb1Imo6b7676rMDQyQMch8v+04jV8gduG9F3e/TyIyp3O9z2DY4G+xU1Lvt8kZ/bikZ70uawa2/kUiLYph0bpX7DgpYXnS7bMw6X/W4HGyznAtsx0ZihH9E2nOOsPQ8VXV7SQIDbcBqpDCQpQxL/cX4/d0DfBwTddVxurF9idx2n6yQFOwyISEhaUaGeCKj4EBVexsC0DRHLnc6MbuSh9tqozhzI5tzoDT0b8IZOBIILeOTXq80LJyPgDEQ4HXRH/7QDgFbs2hOZHugKpiyPafMdmaoSnqsoFOTKfoRlX806nAjpHceznu3sHhL5LYA/Ti/bYCqij5dwh759MKT7ezwALkLANoUosfMH4wfXwffD4fDxXAf3EVD8jORkRFzB9X2PwIHL9HMO8/2HZ7PsqTFJrO/v2X0/Av0z2HjcFKNne1XJcr3AEHiAgwiXAuBhkMaBAE5U4C4LwlMiPyGm/Qwp+qUANXIhlyc8oijEsxDhcmSDBRFM2OgQbRsI4649j4iXjBxGgNvSsN8Uj78rKEZtyI0vfecNJox6jCiywbvlV4ZkeYKperHORmSOlFYsHfi9IUcYlP0iBF/ntNfR4JbT57lT+zMRRD/GSADvcMN+lcN9bHR4pE53RZdKPKFpfk/oFtH4Oa8pJ/O7x69VbqM0b8jQurz4Hw/u0KenLdsgfz1wNnX3vc51sETMSCCiHsW48/IT8bMveor9LzDe73PeXWyo3+DwZr6uUQG+Fx7o/yTrewq7m8W2ZE5j2sk8a9PGYaR6MXivii8FsOyytGUn8R/v7dm0G2CMMjLdgIxRnAwXa5Nn086N3uAGbrg3cUd2IV9P505tRsAbPJD9GPAEDwnwjCXgDc72e4MX+D2h7/SasFRiWNExnkG8s+P3hjoY38vZnc3+U/3e4EF+T3CS3xM61u8NzeXr4l5P8I5N65/5+xiHQxavoAiMPeHSgIy9OpUlkghIBCQCeUFAGpC8wCyFSAQkAhKBsYeANCBjr07HaolkuSQCEoEiQ0AakCKrEKmOREAiIBEoFQSkASmVmpJ6SgQkAhKBQiGgI1caEB1gJFkiIBGQCEgERkZAGpCR8ZGxEgGJgERAIqCDgDQgOsBIskTAPAQkJ4nA2ETAdAPS3tlA0pmctVYAAAuzSURBVEkM5D0g7wF5DxTfPWC2GTPdgDQ3dqF0EgN5D8h7QN4DxXcPFL0BMVtBAJAsJQISAYmARKAIETB9BlKEZZQqSQQkAhIBiUAOEJAGJAegSpYSgTGDgCyIRGAEBMaNAbnt/gunt62um9O25sIjRsBDRkkEMkZgZUfdmatW11VnzEBmlAiUGALjxoCEw5aHUVV+vDu884MSqyOpbgkg0N7hOllB5VlQdf8muARKIVWUCBhDYFwYkJWddScC0W6yRua0Nj25yxhE2aSWeccPAup5iNS6rKm7Y/yUWZZ0vCOQUwNyxwOLDmzrqL+8vaNhPbuNbR0Nd9x6X/2njIDOSwIntXXW3ZzN0tPyxu4/AtKvKaJ8Ll3ZbZ0Nl7V3NvyACDA5T9vqhmlCp/aOC2Ykx+mFRfqVnfU1evF6dDMwjOct8G9jPNs76mvj6bnyM1Y3CXm6bvUFxxuR3b663tneWX97W2d9L99P7Ss7XPON5F/ZWXe+ri6Mi4hr76z7Wjo848tGSKgSVYj8wy6Nst1+X+1Bw+mH5KeEO+pb09FnsG4brlm12v3pdNLHp7nl/vrPrFpdfz1j+hTj+zi7a1etc0+KT2PE39ZRP1uU49bV9acYySfTlhYCOTMg3NAXDPQP/A0R7yaAWYQwHRGuiqjwhohLGyZV+SyCcg0MQFbPLgQPbuM2SPNAoIs56Q/bVzcs52vyOQ1ZJ1KUz0CaB3J6BdDQ+nj76npzMIR9hxrBpUjK1QT4s9atVdZ9MbnxIdFy5LLrOYWsx0EahzDkbZ0N/w2EG4BgKRAexqb9CgXpqTY2Jg8/XGtJgw0ooJyLI+gj4pj3VyGNw4yyhSPKFBxNH8BlkMZBvHzGo52bKRI+No3k0SQCVzYWP7aEYRsRtvJ9P4MATgfAG9Xd6psrOxrSHnRB3IEAP0K+zyKEP4gj59UrheUeASUXItruqz8NCNbyjfisotBRLU1dR7Q0dp0wgOphQLiZVHzglvsu/GIuZJvNEwl+eFvnBceYzXc0frnAkIi7XAA3IXWwMZ86cdvheZmFANAdei+VLWvsemw0LER8e2fDAu6UzuEyLDpqysBkvqe+sPvoHZMJ4FIErPnL++VXiXSjOdajnt3wy66cfxsvbz4ZT2tu8t08Gp998dmVrbnpoT81x718yzPlhYO86YsxektTV8YzgUFe+r+M6/cA8DuM6w1lZWVTmpt8x7c0+g7jOuP2SXsRYGOrwYFG2xrXsYB4BgH9jLF1/mh13aEgjzGJQE4MCESio473lUrlgqsX+/4WQ+77S7r/VWbpX8CN5N8WVTG09BDjka8rNyjuW+BZQNgZJst6DnNbypd0lpMDDFfdV+/g8hyJpDzAEn7LhnwpX0vjRDiNiN5vaep68PzzeyJC6dbZfWEemNzLnd3LfE8dJWjSpY/AoGGg64BgU0uTr/W7F60d3mDS3Oh7kVcNlvJznYrKbYfPTp8rAEbUxczzI6XSsgK5YspIuQzkMSYRUMwuVesDiyZwg64hwEeWLfDsTOb/vcU97/EI55DmRt9NyXHFFiaA91VQmxDxi6s666/Jl365wpBUuASI/tTc5P09l2s9l2vWrR112ktI+Sps+nL+wPpOWdlZxyPmxEx8L32+pdF3RSJVhkZDQBgGxvQABHhQK+3yRt9GxnZqy5LuzVrxWrTW1laF242bZx9D7Z962b9Y0LXSS1ppI2C6AamIhKfxTWnljuqV0oZmUPvljd0Ps4+XWbD1ts78LGXlAkPxMB4BzwaEtcBHRVnF/dyw+yOI3+Zgbk/Cr4gHqsmuvaOhOV3BvFx1H+vr4WcYt3G+D9s76n/V3ll/7arVdSelyyMn6UwoW070SoOpokL0GV4E1ZfSSJ5WkklHvnE232eHEqr3RTMgdnL4iMrD3jg3GpY/YwoB0w2IRVX3EwgR4m5xLVWHfNcjEQr9FVIbeVb1oVjKysdIKhcY7h3YezGPDC0YsXSKMg0tVzwKgAsHZzyQs4OQpgMoX0txKB7Wpid2cLnKtwBUOoYNyR1sCCuBH9ASKS+xIfnd7T+rPTI9TuamMqNs5mqUPrcIQvTZClnNa6uxWe7yxvW/EposW9IlNj3sAAVKZ7lUKF5YVzLSTTcgYevADlF6hWCKuI4Fd3VT97uEyiXIS1mVh7+Z86WsXGCosKFAoL2qRX2srbPhl8IB4KkIMLky3N8AOTxYxkMtjV1fTXbNjV3fNCq2eanvzRZer29u9H1xV3nZ/oC0kAiODVvKojMro/yyTW9m2bLVxWh+BeFtkUfpVw8S12zdzffXfgIA57GbJO4v4dpXN/yCjWw5As4xsu0d5FESCChma7ni4p53ePnqdb5pqvV4R5cfOurF0pBekqKjtzR6n+BZyCMIcL0SgZlCQYULKa5mO7MxHNyLjycB4uMA6tNxrgcIdiBhk9llMJsfzzJCbffWXRTPt/WitXual/jWMe0OALS3dpw9EeSRPgLW8NZoYsUyJ3pN+rldvKPS0fDuSo3nTklJo0HrQPlFgFDGjusk/j6D+6MJwHrp4FX+jhUETDcgAhheYrgfAWtW3ls/S4TjXXtHw1xAPAMAfwcldoQrrE1sMz5gxx0Wd8Pc8+aqCGZiqBIuYT13Wg/sv6SlsXtFvGM5Yq36SyvvdX2e0xTtSYATQVFWiGc5yUoigIUA9sDbp+wRcdKlh0DzRT3/5NnbBiS46uYHF0xNzhWOlC9DhKlWRB50JMemhnnBdwkRPdPc2NXSknCf+cS7VH18r108uPMrNa+klCYCOTEgu6eE7+SR7e8VxGBbR/2dPII5UewFZ//lvOTQzTftS7vgo58YgkyxnNYmPoYY51bdW8eGyBCXrBKvWLju3wDKYjaAB2fFKI3MZmHY+nBtOddFHTfeJ793fs/uFNEKsgEhUhS6MiXOPMInk+tuOLzGdWw6YhSCuxFg5kB//+/aOxsuFvn5+vX2zvobCfAqLuPd/HxKTYeXyWmyLpvJ+hhip1oYO4Ry657w620dDVfd2lF38KrVdSfxQO9WbqstvJrQefUS3wujMW1b3XA6cv0oQD6ttNzm1yLilMo3j6jTipe00kRAyYXaref39E+YBLN5pL4eABcroLxSRso/+Qa6Gwh7w4paY/SbVHxz3oOkbIp3hDg0NYa8HWIpiwB+nmuBZmE46b3y8wFhf0TwaOncsqRrO9O3ckdRt2pd5p+uYB4jnHhefL0l+MPqd0bIOBy1rKnLB6jWM/YfcWe0WvDgyCc5vIQf0N6x++2jxSiXSfk+sy9bvjWOl3fNYu82RPVrfI+8zPTbVFTeIVJeAqDLGOebjpoykN47HESLgWBAte70MZ+Us2xK/8PMbxdC8S+XpigvCboIpBoQ3aTGIq50dX3U0uhbsPuYHQcQhk9QIfJVnKDs19zU1SBeKEyXm+g4mhu7UNM1+dL+jpLI39LU1Zyu3OZG36nNTb5ztNK3NHbVRvkZ2B8v0rNr0eKnRzMDw2VLu7wsF5uX+Px6cpobfTYu60St93b08qRLZ97WqHz9Okyvg2KBzUu6u1uafCdX7n1vIin05Ugk8umWRt9hLUu6rm1tbc1o9tHS2HU0l12znlnkiGdzo8+0ssUENfMzneYoVr4XY7R0r8safcFo3qXdvenmEemWLel+mcti2w0fTUaKnK6q+IVdUwYOZKx/cP7QS5si3UiupdG3uLmpq7zlkic+1konZr8tTV2Tmhu7ztSKl7TSRCBnBiQGR3T75ZKHXhPb+nLRQcXkjOWrxDCxdq+8MrC3ZbHvN9dcuv6viTEylA0CYlVgWdP655cv9b4kZsDZ8JJ5xwcCOTcg4wNGWUqJgCkISCYSgZJCQBqQkqouqaxEQCIgESgeBKQBKZ66kJpIBCQCEoGSQmBMGZCSQl4qKxGQCEgEShwBaUBKvAKl+hIBiYBEoFAISANSKOSlXInAmEJAFmY8IiANyHisdVlmiYBEQCJgAgLSgJgAomQhEZAISATGIwL/HwAA//8X6LbXAAAABklEQVQDADVBhFlNlzAVAAAAAElFTkSuQmCC">
+
+</a>
+<div class="hidden md:flex items-center gap-8 font-label-caps text-label-caps">
+<a class="text-secondary dark:text-secondary-fixed-dim hover:text-primary transition-colors dark:hover:text-primary-fixed-dim transition-all duration-300" href="#tratamentos">Tratamentos</a>
+<a class="text-secondary dark:text-secondary-fixed-dim hover:text-primary transition-colors dark:hover:text-primary-fixed-dim transition-all duration-300" href="#sobre">Sobre</a>
+<a class="text-secondary dark:text-secondary-fixed-dim hover:text-primary transition-colors dark:hover:text-primary-fixed-dim transition-all duration-300" href="#depoimentos">Depoimentos</a>
+<a class="text-secondary dark:text-secondary-fixed-dim hover:text-primary transition-colors dark:hover:text-primary-fixed-dim transition-all duration-300" href="#contato">Contato</a>
+</div>
+<div class="flex items-center gap-4">
+<a class="hidden md:inline-flex items-center justify-center bg-primary text-on-primary font-label-caps text-label-caps px-6 py-3 rounded-DEFAULT hover:bg-primary-container hover:text-on-primary-container transition-colors duration-300" href="#agendar">Agendar Avaliação</a>
+<button class="md:hidden text-primary p-2">
+<span class="material-symbols-outlined text-2xl">menu</span>
+</button>
+</div>
+</div>
+</nav>
+<!-- Hero Section -->
+<section class="relative min-h-screen flex items-center pt-16 overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img alt="Luxury clinic interior" class="w-full h-full object-cover object-center" data-alt="A bright, airy luxury aesthetic clinic interior with soft neutral tones, sage green curved sofas, minimal decor, and large windows letting in soft natural light. The atmosphere is serene, high-end, and immaculately clean." src="https://lh3.googleusercontent.com/aida-public/AB6AXuADkoyXMc_AZahyg_F_vfsAUg36VLq51tE-wyJWHnhHMSP8JXlt3HzHIRLiFPzuKxM5B6Z9pc2mNcv61iA6hwRcizy9xmDs4KMmMhUndx5Zo5aV6hUJQSyt-VHklczav6p_56zK3JZp5CX2FwFgCxpB8gvnCeBynkC_fYm2yfyQCaWnyKi1VL_7lFMtmI9PP9e5z-oj0t5F3Ohv8GGL94Vbtl46-BKhH9Jz1wW38PHuaC7PVUgRUem294PkehW0T6O402kGmFewyZU">
+<div class="absolute inset-0 hero-overlay"></div>
+</div>
+<div class="container mx-auto px-6 max-w-[1200px] relative z-10 flex flex-col md:flex-row items-center justify-between">
+<div class="w-full md:w-1/2 pt-20 md:pt-0">
+<span class="font-label-caps text-label-caps text-primary tracking-widest uppercase mb-4 block">Bem-vindo à Aurora</span>
+<h1 class="font-display-lg text-display-lg md:text-[64px] leading-tight text-on-surface mb-6">Sua melhor versão começa aqui</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-10 max-w-lg">Tratamentos estéticos de alta performance em um ambiente de luxo e serenidade.</p>
+<div class="flex flex-col sm:flex-row gap-6 items-start sm:items-center">
+<a class="inline-flex items-center justify-center bg-primary text-on-primary font-label-caps text-label-caps px-8 py-4 rounded-DEFAULT w-full sm:w-auto hover:bg-primary-container hover:text-on-primary-container transition-colors duration-300 shadow-md" href="#agendar">Agendar Avaliação</a>
+<div class="flex items-center gap-2 text-on-surface-variant font-body-md text-sm">
+<span class="material-symbols-outlined text-gold-accent text-lg" style="font-variation-settings: &quot;FILL&quot; 1;">verified</span>
+<span class="">+2.000 pacientes • Profissionais certificados</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Services Section -->
+<section class="py-section-padding bg-warm-white relative" id="tratamentos">
+<div class="container mx-auto px-6 max-w-[1200px]">
+<div class="text-center mb-16">
+<span class="font-label-caps text-label-caps text-sage-muted tracking-widest uppercase mb-4 block">Nossos Procedimentos</span>
+<h2 class="font-headline-lg text-headline-lg md:text-display-lg text-on-surface">Excelência em Estética</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+<!-- Service 1 -->
+<div class="bg-soft-beige p-8 rounded-lg group hover:-translate-y-2 transition-transform duration-300 flex flex-col h-full border border-transparent hover:border-clinical-gray">
+<div class="w-12 h-12 rounded-full bg-white flex items-center justify-center mb-6 text-primary shadow-sm">
+<span class="material-symbols-outlined" style="font-variation-settings: &quot;FILL&quot; 1;">spa</span>
+</div>
+<h3 class="font-headline-lg text-xl mb-3 text-on-surface">Limpeza de Pele</h3>
+<p class="font-body-md text-on-surface-variant mb-6 flex-grow">Renovação celular profunda para uma pele luminosa, livre de impurezas e com textura aveludada.</p>
+<a class="inline-flex items-center text-primary font-label-caps text-sm hover:text-gold-accent transition-colors mt-auto" href="#agendar">Saiba mais <span class="material-symbols-outlined text-sm ml-1">arrow_forward</span></a>
+</div>
+<!-- Service 2 -->
+<div class="bg-soft-beige p-8 rounded-lg group hover:-translate-y-2 transition-transform duration-300 flex flex-col h-full border border-transparent hover:border-clinical-gray">
+<div class="w-12 h-12 rounded-full bg-white flex items-center justify-center mb-6 text-primary shadow-sm">
+<span class="material-symbols-outlined" style="font-variation-settings: &quot;FILL&quot; 1;">face_retouching_natural</span>
+</div>
+<h3 class="font-headline-lg text-xl mb-3 text-on-surface">Botox</h3>
+<p class="font-body-md text-on-surface-variant mb-6 flex-grow">Suavização de linhas de expressão com naturalidade, prevenindo o envelhecimento e relaxando a musculatura facial.</p>
+<a class="inline-flex items-center text-primary font-label-caps text-sm hover:text-gold-accent transition-colors mt-auto" href="#agendar">Saiba mais <span class="material-symbols-outlined text-sm ml-1">arrow_forward</span></a>
+</div>
+<!-- Service 3 -->
+<div class="bg-soft-beige p-8 rounded-lg group hover:-translate-y-2 transition-transform duration-300 flex flex-col h-full border border-transparent hover:border-clinical-gray">
+<div class="w-12 h-12 rounded-full bg-white flex items-center justify-center mb-6 text-primary shadow-sm">
+<span class="material-symbols-outlined" style="font-variation-settings: &quot;FILL&quot; 1;">auto_awesome</span>
+</div>
+<h3 class="font-headline-lg text-xl mb-3 text-on-surface">Peeling</h3>
+<p class="font-body-md text-on-surface-variant mb-6 flex-grow">Tratamento clareador e rejuvenescedor que estimula a produção de colágeno, reduzindo manchas e cicatrizes.</p>
+<a class="inline-flex items-center text-primary font-label-caps text-sm hover:text-gold-accent transition-colors mt-auto" href="#agendar">Saiba mais <span class="material-symbols-outlined text-sm ml-1">arrow_forward</span></a>
+</div>
+<!-- Service 4 -->
+<div class="bg-soft-beige p-8 rounded-lg group hover:-translate-y-2 transition-transform duration-300 flex flex-col h-full border border-transparent hover:border-clinical-gray">
+<div class="w-12 h-12 rounded-full bg-white flex items-center justify-center mb-6 text-primary shadow-sm">
+<span class="material-symbols-outlined" style="font-variation-settings: &quot;FILL&quot; 1;">water_drop</span>
+</div>
+<h3 class="font-headline-lg text-xl mb-3 text-on-surface">Skincare</h3>
+<p class="font-body-md text-on-surface-variant mb-6 flex-grow">Protocolos personalizados de hidratação e nutrição para manter os resultados e a saúde da sua pele em dia.</p>
+<a class="inline-flex items-center text-primary font-label-caps text-sm hover:text-gold-accent transition-colors mt-auto" href="#agendar">Saiba mais <span class="material-symbols-outlined text-sm ml-1">arrow_forward</span></a>
+</div>
+</div>
+</div>
+</section>
+<!-- Why Aurora Section -->
+<section class="py-section-padding bg-background">
+<div class="container mx-auto px-6 max-w-[1200px]">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-8 text-center">
+<div class="flex flex-col items-center">
+<div class="w-16 h-16 rounded-full bg-surface-container flex items-center justify-center mb-6 text-gold-accent">
+<span class="material-symbols-outlined text-3xl" style="font-variation-settings: &quot;wght&quot; 200;">workspace_premium</span>
+</div>
+<h3 class="font-headline-lg text-2xl mb-4 text-on-surface">Profissionais Qualificados</h3>
+<p class="font-body-md text-on-surface-variant">Nossa equipe é formada por especialistas altamente treinados e em constante atualização para garantir segurança e resultados de excelência.</p>
+</div>
+<div class="flex flex-col items-center">
+<div class="w-16 h-16 rounded-full bg-surface-container flex items-center justify-center mb-6 text-gold-accent">
+<span class="material-symbols-outlined text-3xl" style="font-variation-settings: &quot;wght&quot; 200;">local_florist</span>
+</div>
+<h3 class="font-headline-lg text-2xl mb-4 text-on-surface">Ambiente Acolhedor</h3>
+<p class="font-body-md text-on-surface-variant">Cada detalhe da clínica foi pensado para proporcionar uma experiência de puro relaxamento, luxo e tranquilidade do início ao fim.</p>
+</div>
+<div class="flex flex-col items-center">
+<div class="w-16 h-16 rounded-full bg-surface-container flex items-center justify-center mb-6 text-gold-accent">
+<span class="material-symbols-outlined text-3xl" style="font-variation-settings: &quot;wght&quot; 200;">trending_up</span>
+</div>
+<h3 class="font-headline-lg text-2xl mb-4 text-on-surface">Resultados Reais</h3>
+<p class="font-body-md text-on-surface-variant">Utilizamos tecnologia de ponta e protocolos baseados em evidências para entregar transformações visíveis e duradouras que realçam sua beleza natural.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Booking Section -->
+<section class="py-section-padding bg-soft-beige relative overflow-hidden" id="agendar">
+<div class="container mx-auto px-6 max-w-[1200px] relative z-10">
+<div class="max-w-3xl mx-auto bg-white rounded-xl shadow-sm p-8 md:p-12 border border-clinical-gray/30">
+<div class="text-center mb-10">
+<h2 class="font-headline-lg text-headline-lg md:text-display-lg text-on-surface mb-4">Agende sua Avaliação</h2>
+<p class="font-body-md text-on-surface-variant">Preencha o formulário abaixo e nossa equipe entrará em contato. <strong class="text-primary font-medium">Resposta em até 1 hora.</strong></p>
+</div>
+<form class="space-y-6">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div>
+<label class="block font-label-caps text-xs text-on-surface-variant mb-2" for="nome">Nome Completo</label>
+<input class="w-full border-0 border-b border-clinical-gray bg-transparent px-0 py-2 text-on-surface focus:ring-0 focus:border-primary transition-colors font-body-md placeholder-secondary-fixed-dim" id="nome" placeholder="Seu nome" type="text">
+</div>
+<div>
+<label class="block font-label-caps text-xs text-on-surface-variant mb-2" for="whatsapp">WhatsApp</label>
+<input class="w-full border-0 border-b border-clinical-gray bg-transparent px-0 py-2 text-on-surface focus:ring-0 focus:border-primary transition-colors font-body-md placeholder-secondary-fixed-dim" id="whatsapp" placeholder="(00) 00000-0000" type="tel">
+</div>
+</div>
+<div>
+<label class="block font-label-caps text-xs text-on-surface-variant mb-2" for="servico">Serviço de Interesse</label>
+<select class="w-full border-0 border-b border-clinical-gray bg-transparent px-0 py-2 text-on-surface focus:ring-0 focus:border-primary transition-colors font-body-md" id="servico">
+<option disabled="" selected="" value="">Selecione um tratamento</option>
+<option value="limpeza">Limpeza de Pele</option>
+<option value="botox">Botox</option>
+<option value="peeling">Peeling</option>
+<option value="skincare">Skincare</option>
+<option value="outro">Outro / Não sei</option>
+</select>
+</div>
+<div>
+<label class="block font-label-caps text-xs text-on-surface-variant mb-2" for="mensagem">Mensagem (Opcional)</label>
+<textarea class="w-full border-0 border-b border-clinical-gray bg-transparent px-0 py-2 text-on-surface focus:ring-0 focus:border-primary transition-colors font-body-md placeholder-secondary-fixed-dim resize-none" id="mensagem" placeholder="Conte-nos um pouco sobre o que você busca..." rows="3"></textarea>
+</div>
+<div class="pt-4 text-center">
+<button class="inline-flex items-center justify-center bg-primary text-on-primary font-label-caps text-label-caps px-12 py-4 rounded-DEFAULT hover:bg-primary-container hover:text-on-primary-container transition-colors duration-300 shadow-md w-full md:w-auto" type="button">
+                            Solicitar Agendamento
+                            <span class="material-symbols-outlined ml-2 text-sm">send</span>
+</button>
+</div>
+</form>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-surface-container dark:bg-surface-container-highest w-full py-10 border-t border-clinical-gray dark:border-outline-variant flat no shadows">
+<div class="max-w-[1200px] mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-8 font-body-md text-body-md text-secondary dark:text-secondary-fixed-dim">
+<div class="col-span-1 md:col-span-1">
+<span class="font-display-lg text-headline-lg text-primary dark:text-primary-fixed-dim block mb-4">Clínica Aurora</span>
+<p class="text-sm mb-4">Timeless Beauty &amp; Wellness. Uma clínica de estética de luxo focada na sua melhor versão.</p>
+<div class="flex gap-4">
+<a class="text-secondary hover:text-gold-accent transition-colors duration-200" href="#">
+<svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path clip-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" fill-rule="evenodd"></path></svg>
+</a>
+<a class="text-secondary hover:text-gold-accent transition-colors duration-200" href="#">
+<svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path clip-rule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z" fill-rule="evenodd"></path></svg>
+</a>
+</div>
+</div>
+<div>
+<h4 class="font-label-caps text-on-surface mb-4">Contato</h4>
+<ul class="space-y-2 text-sm">
+<li class=""><a class="hover:text-gold-accent transition-colors duration-200" href="#">(11) 99999-9999</a></li>
+<li class=""><a class="hover:text-gold-accent transition-colors duration-200" href="#">contato@clinicaaurora.com.br</a></li>
+<li class="mt-4"><span class="block font-medium text-on-surface">Endereço</span> Av. Paulista, 1000 - Bela Vista<br>São Paulo, SP - 01310-100</li>
+</ul>
+</div>
+<div>
+<h4 class="font-label-caps text-on-surface mb-4">Horário de Funcionamento</h4>
+<ul class="space-y-2 text-sm">
+<li class="flex justify-between border-b border-clinical-gray/30 pb-1"><span class="">Seg - Sex:</span> <span class="">08:00 - 20:00</span></li>
+<li class="flex justify-between border-b border-clinical-gray/30 pb-1 pt-1"><span class="">Sábados:</span> <span class="">09:00 - 15:00</span></li>
+<li class="flex justify-between pt-1"><span class="">Domingos:</span> <span class="">Fechado</span></li>
+</ul>
+</div>
+<div>
+<h4 class="font-label-caps text-on-surface mb-4">Links Úteis</h4>
+<ul class="space-y-2 text-sm">
+<li class=""><a class="text-secondary hover:text-gold-accent transition-colors duration-200" href="#">Termos de Uso</a></li>
+<li class=""><a class="text-secondary hover:text-gold-accent transition-colors duration-200" href="#">Política de Privacidade</a></li>
+<li class=""><a class="text-secondary hover:text-gold-accent transition-colors duration-200" href="#">Trabalhe Conosco</a></li>
+</ul>
+</div>
+<div class="col-span-1 md:col-span-4 text-center mt-8 pt-8 border-t border-clinical-gray/50 text-xs">
+                © 2024 Clínica Aurora. Todos os direitos reservados.
+            </div>
+</div>
+</footer>
+<script>
+        // Simple scroll effect for navbar
+        window.addEventListener('scroll', () => {
+            const nav = document.getElementById('main-nav');
+            if (window.scrollY > 20) {
+                nav.classList.add('shadow-sm');
+                nav.classList.replace('bg-surface/80', 'bg-surface/95');
+            } else {
+                nav.classList.remove('shadow-sm');
+                nav.classList.replace('bg-surface/95', 'bg-surface/80');
+            }
+        });
+    </script>
+</body></html>

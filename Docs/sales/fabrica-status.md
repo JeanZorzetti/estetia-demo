@@ -10,18 +10,15 @@
 | Build | ✅ 4/4 páginas estáticas (standalone) |
 | Automação de lembretes | ✅ `scheduleReminders()` — 24h e 2h antes da consulta |
 | Dockerfile standalone | ✅ pronto para EasyPanel/Docker |
-| **URL pública** | **`[PENDING DEPLOY]`** — atualizar após subir no EasyPanel |
+| **URL pública** | **https://demo.estetiacrm.com.br/** ✅ NO AR |
+| Home carrega | ✅ verificado (Playwright, 2026-06-09) |
+| CTA converte (BookingForm) | ✅ CTA "Agende sua consulta" → âncora #agendamento → formulário (Nome/WhatsApp/Serviço/Mensagem) |
+| Serviços | ✅ Limpeza de Pele, Botox, Peeling |
+| Console | 🟡 1 erro: `404 favicon.ico` (trivial — falta favicon na pasta public/) |
 
-## Como atualizar este arquivo
+## Pendência menor
 
-Após o deploy no EasyPanel, substituir `[PENDING DEPLOY]` pela URL real e marcar:
-
-```
-| **URL pública** | **https://<slug>.easypanel.host** |
-| Home carrega | ✅ |
-| CTA converte (BookingForm) | ✅ |
-| Sem erros no console | ✅ |
-```
+- Adicionar `public/favicon.ico` (clínica sem ícone na aba parece amadora numa demo de venda). Único erro de console.
 
 ## Como usar para vendas
 
