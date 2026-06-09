@@ -268,25 +268,42 @@ As Tasks 7, 8 e 9 originais (clínicas-alvo, roteiro Loom, abordagem) **não se 
 
 ---
 
-## Task 7 (nova): Aquisição via SEO — ADIADA DE PROPÓSITO
+## ✅ DECISÃO RESOLVIDA (2026-06-09): Funil A — SEO capta DONO de clínica
+
+A "decisão em aberto" (serviço vs produto) foi resolvida: **Funil A — SEO inbound mira o DONO de clínica (B2B); a demo Aurora vira PROVA; fechamento 1-a-1; serviço sob demanda.** Produto self-service (Funil C) = Fase 4 futura. Detalhe completo na seção 3 de `estrategia-comercializacao.md`.
+
+**O elo que falta agora (gargalo):** a `demo.estetiacrm.com.br` é uma clínica fictícia que fala com PACIENTE. O SEO precisa de uma **página B2B de captação** que fala com o DONO ("sites que enchem a agenda da sua clínica") e usa a demo como prova clicável. Sem ela, o SEO não tem onde converter. → Task 7 (Squad D / S4).
+
+---
+
+## Task 7 (S4): Página B2B de captação ✅ FEITA
+
+**Feito por Claude (não pela fábrica)** — re-implementação contida não justificava ligar um squad (custo de RAM). Regra "visual vem do Stitch" respeitada: design da V1 Premium do Stitch → re-implementado em React.
+
+**Decisão de arquitetura:** B2B virou a **home `/`**; demo Aurora movida para **`/demo`**. (Pendência de domínio: idealmente B2B em `estetiacrm.com.br` raiz e demo em `demo.estetiacrm.com.br` — decisão de DNS/EasyPanel, código já pronto pra isso.)
+
+- [x] **Step 0: Design no Google Stitch** — V1 "Premium" escolhida (vs V2 "Cinematic"); HTML em `Docs/stitch/b2b/v1-premium.html`.
+- [x] **Step 1: Mover demo Aurora p/ `/demo`** — `src/app/demo/page.tsx` + metadata própria.
+- [x] **Step 2: Re-implementar B2B na home** — `src/app/page.tsx` (seções: hero, dores, solução, prova→/demo, ROI, como funciona, oferta+form, footer). Copy p/ DONO.
+- [x] **Step 3: Config B2B** — `src/config/b2b.ts` (fonte de verdade da copy) + `src/components/b2b/LeadForm.tsx` (nome, clínica, WhatsApp).
+- [~] **Step 4: Build/deploy** — build local impossível (node_modules corrompido por OneDrive lock); validação real no Docker EasyPanel. Commitar + push → rebuild.
+- [ ] **Step 5: Verificar live** após rebuild (home B2B em `/`, demo em `/demo`, form capta, link prova funciona).
+
+---
+
+## Task 8 (futuro): Aquisição via SEO — última milha
 
 **Files (futuros):** `docs/sales/seo-plan.md`
 
-**Decisão estratégica:** planejar o SEO **só quando o projeto estiver ~95% pronto** (resta SEO como última milha). Planejar cedo = desperdício, porque keywords/páginas/conteúdo dependem do que exatamente vai ser vendido — e isso ainda pode mudar.
+**Ligar o SEO só quando a página B2B (Task 7) estiver no ar e o serviço ~95% pronto.** Funil definido (A), então o conteúdo já tem alvo claro: o DONO de clínica.
 
-**Pré-requisito que falta antes do SEO (a decisão em aberto):** definir **o que o SEO vai vender** —
-- (a) serviço sob encomenda (atrair donos de clínica buscando "site/automação pra clínica"), ou
-- (b) um produto com SEO embutido (gerador/template/micro-SaaS que rankeia e vende no autoatendimento).
+**Riscos mapeados (do benchmark):**
+- SEO B2B é nicho (pouco volume) + lento (meses). Mitigação: long-tail de fundo de funil ("quanto custa site para clínica", "como reduzir no-show") + a demo premium como diferencial.
+- Termo "site para clínica" é disputado. Mitigação: ir fundo no nicho estética onde o domínio ganha.
 
-Essa escolha muda completamente o conteúdo e as páginas. **Deixada em aberto de propósito** até o produto/serviço estar maduro.
-
-**Riscos já mapeados (do benchmark inicial), a tratar quando for planejar:**
-- SEO nacional pra termo de compra ("site clínica estética") é caçador de preço + disputado por SaaS/agências com anos de domínio → meses/anos pra ranquear.
-- SEO genérico não capitaliza o fosso (domínio em estética + entrega rápida). O "como" do SEO decide se funciona ou vira buraco sem fundo.
-
-- [ ] **(futuro) Decidir o que o SEO vende** (serviço vs produto) — só quando o projeto estiver ~95%
-- [ ] **(futuro) Planejar keywords/páginas/conteúdo** a partir dessa decisão
-- [ ] **(futuro) Métricas de SEO** (não as antigas D+30/60/90 de prospecção local)
+- [ ] **(futuro) Plano de keywords/páginas/conteúdo** B2B p/ dono de clínica
+- [ ] **(futuro) Calendário de conteúdo** (artigos de fundo de funil)
+- [ ] **(futuro) Métricas SEO:** tráfego orgânico → cadastro → call → venda → retainer
 
 ---
 
@@ -295,9 +312,11 @@ Essa escolha muda completamente o conteúdo e as páginas. **Deixada em aberto d
 | Fase | Status |
 |------|--------|
 | Fábrica (Tasks 1-5) | ✅ Completa — demo no ar em demo.estetiacrm.com.br |
+| Redesign premium (Stitch) | ✅ Commitado (sage/dourado, Playfair+Inter) — aguardando rebuild EasyPanel |
 | Oferta (Task 6) | ✅ Completa — preços por benchmark |
-| Aquisição (SEO) | ⏸️ Adiada de propósito até projeto ~95% |
-| **Decisão em aberto** | **O que vender via SEO: serviço sob encomenda OU produto?** |
+| **Funil de conversão** | ✅ **Definido: Funil A (SEO→dono→prova→venda 1-a-1)** |
+| Página B2B (Task 7 / S4) | ⬜ **PRÓXIMO** — elo que falta p/ o SEO converter |
+| Aquisição SEO (Task 8) | ⏸️ Última milha, após página B2B + serviço ~95% |
 
 ---
 

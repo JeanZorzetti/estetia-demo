@@ -1,19 +1,24 @@
-# Estratégia de Comercialização — Micro Software House Vertical (Estética) com Agent Teams AI como Fábrica
+# Estratégia de Comercialização — Micro Software House Vertical (Saúde/Estética) com Agent Teams AI como Fábrica
 
 ## Context
 
 **Por que este documento existe:** O usuário quer ganhar dinheiro com o Agent Teams AI (app Electron OSS de terceiro — 777genius — clonado para teste, cheio de bugs que só ele domina). A pergunta de partida não era técnica, era de modelo de negócio: "como descubro a melhor forma de monetizar?".
 
-**Restrições reais que moldaram a decisão (levantadas no brainstorm):**
-- O app **não é dele** (OSS de terceiro) e é **pesado** (3GB RAM, depende de paginação no SSD na máquina de 16GB). Rodar 5 runtimes de agente em paralelo é o custo real, não o Electron em si.
-- **Sem servidor potente** → nuvem está fora por ora.
+**A pergunta que reformulou este documento (2026-06-09):**
+> A `demo.estetiacrm.com.br`, que usará **SEO** para obter cadastros, como converte esse cadastro em **venda de software/site sob demanda** para a vertical de saúde/estética?
+
+Essa pergunta expôs uma lacuna: a versão anterior assumia **prospecção ativa local** (gravar Loom e abordar clínicas de Goiânia). O canal virou **SEO nacional/inbound** — o cliente acha você, você não persegue. Inbound e outbound convertem de formas opostas, então o funil foi redesenhado.
+
+**Restrições reais (do brainstorm):**
+- O app **não é dele** (OSS de terceiro) e é **pesado** (3GB RAM, paginação no SSD na máquina de 16GB). Rodar runtimes de agente em paralelo é o custo real.
+- **Sem servidor potente** → SaaS multi-tenant/self-service está fora por ora.
 - O usuário **recusou** vender conhecimento/setup/curso/consultoria.
-- Já tem **produtos prontos** no nicho de estética (Estetia CRM, Sofia IA) mas **nunca vendeu serviço avulso** (site/automação) para clínica.
+- Já tem **produtos prontos** no nicho (Estetia CRM, Sofia IA) mas **nunca vendeu serviço avulso** (site/automação) para clínica.
 
-**Decisão central (validada passo a passo com o usuário):**
-> Vender **software** (não a ferramenta, não conhecimento). O Agent Teams AI é a **fábrica invisível de produção** na máquina dele. O cliente recebe site/automação que roda sozinho — nunca vê um agente. Modelo: **micro software house de 1 pessoa, vertical em clínicas de estética, começando por software sob encomenda (site/LP) com upsell de automação recorrente.**
+**Decisão central (validada passo a passo):**
+> Vender **software/site sob demanda** (não a ferramenta, não conhecimento). O Agent Teams AI é a **fábrica invisível de produção**. O cliente recebe site/automação que roda sozinho — nunca vê um agente. Modelo: **micro software house de 1 pessoa, vertical em clínicas de saúde/estética, captação por SEO inbound, fechamento 1-a-1, com upsell de automação recorrente.**
 
-**Resultado pretendido:** primeiro cliente pagante de serviço em estética, validando a esteira oferta→entrega→recorrência, com a fábrica de agentes dando vantagem de custo/velocidade.
+**Resultado pretendido:** primeiro cliente pagante via funil SEO → lead → venda, validando a esteira com a fábrica de agentes dando vantagem de custo/velocidade.
 
 ---
 
@@ -22,142 +27,158 @@
 Micro software house de 1 pessoa. Agent Teams AI = linha de produção interna, nunca exposta ao cliente.
 
 - **Não é** revenda do app, não é consultoria, não é curso. É **produto/serviço entregue**.
-- **Vantagem de custo:** a fábrica de agentes comprime tempo de produção → entrega em dias o que agência faz em semanas, mantendo margem por hora alta (benchmark: solo dev + agente entrega MVP por R$5-25k onde agência cobra R$20-75k, ganhando mais por hora que sênior de agência).
+- **Vantagem de custo:** a fábrica de agentes comprime tempo de produção → entrega em dias o que agência faz em semanas, mantendo margem por hora alta (benchmark: solo dev + agente entrega MVP por R$5-25k onde agência cobra R$20-75k).
 - **Fosso:** concorrente que faz na mão não acompanha custo/velocidade. Vertical + domínio defende preço (nichado cobra 20-50% mais que generalista).
 
-## 2. Vertical: Estética (decisão baseada em benchmark)
+## 2. Vertical: Saúde/Estética (decisão baseada em benchmark)
 
 **Por que estética e não jurídico/dental (que pagam MAIS por cliente):**
 
 | Critério | Estética (med spa) | Jurídico/Dental |
 |---|---|---|
-| Ticket bruto | Médio (retainer $2,5k-8k/mês) | Alto ($5k-15k/mês; PI até $100k MRR books) |
+| Ticket bruto | Médio (retainer R$2,5k-8k/mês) | Alto |
 | Saturação | **Ainda aberta** (maioria usa agência genérica) | Lotado de especialistas |
 | Crescimento | 12-15%/ano; buscas eletivas +20-30% YoY | Maduro |
 | Vantagem injusta do usuário | **ALTA** (Estetia/Sofia já existem) | Nenhuma |
-| ROI de automação | Quantificável (no-show -30% = R$16-24k/mês recuperados p/ clínica de 80 consultas) | Quantificável mas mais concorrido |
+| ROI de automação | Quantificável (no-show -30% = receita recuperada) | Quantificável mas mais concorrido |
 
-**Veredito:** estética não paga o máximo, mas é o melhor ponto de largada porque combina (1) vantagem injusta real, (2) nicho aberto, (3) ROI de automação que vende sozinho. Regra dos dados: "escolha um vertical e vá fundo" — ele já está 80% fundo sem ter vendido nada. Jurídico/dental = expansão futura (playbook replicável).
+**Veredito:** estética é o melhor ponto de largada — vantagem injusta real + nicho aberto + ROI que vende sozinho. Dental/odonto (domínio via Seven-MD) e jurídico = expansão futura (playbook replicável).
 
-**Resiliência econômica:** sinal social (r/smallbusiness, "is business slowing down", 660 upvotes/512 comentários) mostra PMEs cortando gasto. Clínica de estética (margem alta, procedimento eletivo de ticket alto, R$1-3M receita/ano por unidade) aguenta pagar onde comércio local genérico aperta primeiro.
+---
 
-## 3. Oferta Produtizada (escopo fixo, não "orçamento sob medida")
+## 3. ★ O FUNIL DE CONVERSÃO: do SEO ao contrato (núcleo da estratégia)
 
-**Oferta de entrada — "Site + Landing de alta conversão pra sua clínica":**
-- Preço fixo, escopo fixo, entrega ~1 semana (fábrica comprime tempo).
-- Ticket: **R$3k-6k**. Fecha rápido porque é tangível.
-- Produtizar (não sob medida) = fica rápido, reaproveita templates, foge do "projeto que nunca acaba". Clínicas são parecidas o bastante.
+Esta é a resposta à pergunta central. **Funil escolhido: A — SEO capta o DONO da clínica (B2B inbound).**
 
-**Upsell recorrente — "Automação de agendamento + follow-up de paciente":**
-- Retainer mensal **R$500-1.500/mês**. Onde mora o LTV.
-- Vendido DEPOIS que o site provou valor (confiança estabelecida).
-- Pitch pronto com número: lembrete 24h/2h corta no-show 20-30% = R$16-24k/mês recuperados; resposta a lead <5min dispara conversão.
+### 3.1 Quem o SEO capta (decisão crítica)
 
-**Escada de receita (LTV 12 meses: R$6k-25k+):**
+O SEO **não** deve mirar pacientes. Mira o **comprador: o dono/gestor de clínica** buscando como resolver a própria dor ("site para clínica de estética", "sistema de agendamento para clínica", "como diminuir falta de paciente", "marketing para clínica de estética"). Captar paciente encheria o funil de gente que quer agendar botox — não quem compra software.
+
+### 3.2 A arquitetura de páginas (o ajuste que o funil exige)
+
+Hoje a `demo.estetiacrm.com.br` é uma **clínica fictícia (Aurora)**. Sozinha, ela fala com paciente, não com dono. O funil precisa de duas camadas:
+
+1. **Página B2B de captação** (a que o SEO rankeia) — fala com o DONO:
+   *"Sites e automação que enchem a agenda da sua clínica de estética."*
+   Conteúdo: dor (agenda vazia, no-show, lead perdido no Instagram) → solução → **prova** → CTA de cadastro.
+   - Onde: raiz `estetiacrm.com.br` e/ou páginas de conteúdo SEO (`/para-clinicas`, blog de fundo de funil).
+2. **Demo Aurora** (`demo.estetiacrm.com.br`) — vira **prova viva clicável**: "veja um exemplo do que entrego". O dono navega, vê o nível premium, e pensa *"quero esse padrão na minha clínica"*.
+
+> A demo não é a oferta. É o portfólio. A oferta está na página B2B.
+
+### 3.3 A esteira completa (cadastro → venda → recorrência)
+
 ```
-Demo (fábrica) → Loom personalizado → venda site (R$3-6k, fecha rápido)
-  → entrega em dias (fábrica) → prova de valor
-  → upsell automação (retainer R$500-1.5k/mês) → LTV
-  → case/depoimento → próxima venda mais fácil
+SEO (conteúdo B2B p/ dono de clínica)
+  → dono acha a página de captação
+  → clica na demo Aurora (PROVA: "olha o que ele entrega")
+  → cadastra (nome, clínica, WhatsApp) = LEAD B2B MORNO
+  → contato 1-a-1 (WhatsApp/call): diagnóstico rápido + oferta
+  → fecha SITE de captação (R$3.500 / fundador R$1.750)
+  → fábrica entrega em dias (parametriza a Aurora p/ a clínica real)
+  → prova de valor → upsell AUTOMAÇÃO (retainer R$697/mês)
+  → case/depoimento → alimenta SEO (conteúdo) + fecha próximos mais fácil
 ```
 
-## 4. Aquisição do 1º Cliente (do zero)
+### 3.4 Por que SEO inbound (e não Loom/prospecção ativa)
 
-Gargalo = prova + abordagem (tem produto, zero cliente de serviço).
+- **Escala sem o seu tempo de prospecção:** conteúdo rankeado trabalha 24/7; você não persegue clínica uma a uma.
+- **Lead morno, não frio:** quem busca "site para clínica" já tem a dor — conversão muito maior que abordagem fria.
+- **Nacional, não local:** Goiânia é irrelevante; o conteúdo capta dono de clínica de qualquer lugar do Brasil.
+- **Composto:** cada artigo/case fica rankeando e gerando lead por meses.
 
-**Passo 1 — Demo irresistível (não portfólio genérico):**
-Usar a fábrica pra montar UM site + LP de clínica fictícia impecável, com automação de agendamento/follow-up funcionando. Vira arma de venda: mostrar resultado pronto, não "eu faço sites".
+### 3.5 O elo fraco (consciente) e a mitigação
 
-**Passo 2 — Abordagem por prova (Loom personalizado):**
-Escolher 5-10 clínicas reais da cidade. Pra cada uma, gravar Loom de ~3 min mostrando (a) problema concreto no site/agendamento atual + (b) demo resolvendo + (c) ROI explícito ("recupera ~R$X/mês em no-show"). Trabalhoso por clínica, mas a fábrica dá o tempo e a conversão é muito maior que e-mail frio.
+- **SEO B2B é nicho** (pouco volume de busca) e **lento** (meses pra rankear). Mitigação: conteúdo de fundo de funil com alta intenção ("quanto custa site para clínica", "como reduzir no-show") + a demo como diferencial visual que nenhum concorrente genérico tem.
+- **Termo competitivo:** "site para clínica" disputa com agências/SaaS antigos. Mitigação: ir fundo no nicho estética (long-tail) onde o domínio do usuário ganha.
+- **Por isso o SEO é planejado só quando o produto/serviço estiver ~95% pronto** (keywords/páginas dependem da oferta final). Ver seção 7.
 
-**Passo 3 — Oferta de risco baixo pro cliente:**
-Preço de fundador ("primeiras 2 clínicas pagam metade, estou montando portfólio do nicho") OU garantia ("não gostou, não paga"). Troca margem por case + depoimento, que destravam vendas seguintes.
+---
+
+## 4. Oferta Produtizada (escopo fixo)
+
+**Detalhe completo e benchmark em `Docs/sales/oferta.md`.** Resumo:
+
+**Posicionamento:** NÃO vender "site" (comoditizado R$970) nem "agendamento" (SaaS R$40/mês). Vender **"site de captação + automação que enche a agenda"** — ancora em preço de agência de marketing.
+
+- **Entrada — "Site de Captação":** R$3.500 (fundador R$1.750). Escopo fixo, entrega ~1 semana.
+- **Upsell recorrente — "Agenda Cheia" (automação):** R$697/mês + setup R$1.500. Pitch ROI: se paga com 2 no-shows evitados.
+- **Pacote:** R$5.000 + R$697/mês (fundador R$2.500 + R$697/mês). LTV 12m ~R$10.9k.
+- **Risco baixo:** preço de fundador (metade no setup, 2 primeiras, em troca de case).
 
 ## 5. A Fábrica Invisível (Agent Teams AI) — Arquitetura de Squads
 
-Atualizada com aprendizados reais de operação do app (substitui o modelo antigo "lead Opus + Haiku devs").
-
 **Composição de cada squad (4 membros):**
 - 1 **Lead** — Opus 4.8 **High** (orquestra, decide, distribui)
-- 2 **Operadores** — Sonnet 4.6 **Low** (volume de execução; substituem os Haiku, que entregavam qualidade ruim e geravam retrabalho = mais custo, não menos)
-- 1 **Revisor** — Sonnet 4.6 **High** (valida antes de fechar o sprint; dono do hand-off)
+- 2 **Operadores** — Sonnet 4.6 **Low** (volume; substituem Haiku, que gerava retrabalho)
+- 1 **Revisor** — Sonnet 4.6 **High** (valida antes de fechar; dono do hand-off)
 
-**Regra dura de RAM — UM SQUAD ATIVO POR VEZ:**
-- O OOM (`agent_teams_ai_oom_root_cause.md`) vem dos *runtimes simultâneos*, não da contagem lógica de membros. Granularizar em squads NÃO resolve sozinho — só resolve se **apenas um squad estiver ligado a cada momento**.
-- Os outros squads existem no config mas ficam **desligados**. Fluxo: liga squad → executa o sprint macro → revisor monta hand-off → desliga squad → liga o próximo.
-- 4 runtimes de um squad ≈ carga gerenciável; 2 squads (8 runtimes) = OOM pior que hoje. Nunca paralelizar squads na máquina atual de 16GB.
+**Regra dura de RAM — UM SQUAD ATIVO POR VEZ:** o OOM (`agent_teams_ai_oom_root_cause.md`) vem dos *runtimes simultâneos*. 1 squad (4 runtimes) ≈ gerenciável; 2 squads (8) = OOM pior. Fluxo: liga → executa sprint → hand-off → **desliga** → liga o próximo. (24GB+ RAM é o fix p/ paralelizar no futuro.)
 
-**1 squad = 1 sprint macro:**
-- Cada squad é responsável por um sprint macro inteiro (casa com a regra global "um sprint por sessão" e com "não paralelizar deploy").
-- Isolamento natural: como só um squad roda por vez e cada um cobre um sprint, o paralelismo perigoso fica impossível por design.
+**1 squad = 1 sprint macro** (casa com "um sprint por sessão" e "não paralelizar deploy").
 
-**Hand-off robusto entre squads (doc estruturado + CLAUDE.md):**
-- Ao fechar o sprint, o **Revisor** produz um doc de hand-off com seções obrigatórias: (1) o que foi feito, (2) decisões técnicas e porquês, (3) estado atual do código, (4) pendências, (5) gotchas descobertos, (6) como rodar/testar, (7) próximos passos pro squad seguinte.
-- Além do doc, o squad **atualiza o CLAUDE.md do projeto** (fonte de verdade) com o que mudou — o próximo squad já pega contexto no arranque, sem reconstruir do zero.
-- Conecta com o Context Keeper: o problema de handoff entre sessões de agente é o mesmo padrão.
+**Hand-off ao fechar (Revisor):** doc de 7 seções (feito / decisões+porquês / estado / pendências / gotchas / como rodar / próximos passos) + atualiza CLAUDE.md. Próximo squad lê o hand-off no arranque (mesmo padrão do Context Keeper).
 
 **Saída pro cliente:** site/automação standalone (Next.js, padrão Estetia). Zero Electron, zero agente, zero RAM dele.
 
-**Disciplina (do `agent_teams_operating_playbook.md`):** 1 task = 1 verde; gate de build no pre-commit; CLAUDE.md = fonte de verdade; não force-approve pra fugir de bloqueio.
+**Disciplina (`agent_teams_operating_playbook.md`):** 1 task = 1 verde; gate de build no pre-commit; CLAUDE.md = fonte de verdade; não force-approve pra fugir de bloqueio.
 
-**Limite consciente:** peso/OOM é problema da produção, contido na máquina dele. Não escala além dela por ora — o negócio é entrega artesanal acelerada, não SaaS multi-tenant. (24GB+ de RAM é o fix real se quiser rodar squads em paralelo no futuro.)
+**Limite consciente:** peso/OOM contido na máquina dele. Não escala além dela por ora — entrega artesanal acelerada, não SaaS multi-tenant.
 
 ## 6. Precificação (resumo)
 
-| Item | Preço | Tipo |
-|---|---|---|
-| Site + LP clínica | R$3k-6k (fundador: metade nas 2 primeiras) | One-time |
-| Retainer automação | R$500-1.500/mês | Recorrente |
-| Pacote completo (site + automação) | R$4k-7k setup + retainer | Misto |
+| Item | Cheio | Fundador | Tipo |
+|---|---|---|---|
+| Site de Captação | R$3.500 | R$1.750 | One-time |
+| Automação (setup) | R$1.500 | R$750 | One-time |
+| Automação (retainer) | R$697/mês | R$697/mês | Recorrente |
+| **Pacote** | R$5.000 + R$697/mês | R$2.500 + R$697/mês | Misto |
 
-Princípio de venda dos dados: **vender ROI, não horas** ("economizo R$X/mês, cobro R$Y/mês").
+Princípio: **vender ROI, não horas**.
 
-## 7. Métricas (validar o modelo)
+## 7. Aquisição (SEO) — sequenciamento
 
-- **D+30:** 1 demo pronta + 10 clínicas abordadas via Loom.
-- **D+60:** 1º cliente pago (site).
-- **D+90:** 1º retainer de automação ativo + 1 case/depoimento documentado. (Espelha kill/validate criteria que ele usa em outros micro-SaaS.)
-- **Norte:** 5 clínicas com retainer = base recorrente que sustenta foco no nicho.
+**O SEO é a ÚLTIMA milha — planejado e ligado só quando o produto/serviço estiver ~95% pronto.** Planejar cedo = desperdício (keywords/páginas dependem da oferta final).
 
-## 8. Roadmap de Expansão (médio prazo)
+**Pré-requisitos antes de ligar o SEO:**
+1. Demo Aurora premium no ar ✅ (`demo.estetiacrm.com.br`).
+2. Oferta definida ✅ (`Docs/sales/oferta.md`).
+3. **Página B2B de captação** construída (a que rankeia — fala com o dono; ver 3.2). ⬜ Pendente.
+4. Plano de SEO: keywords long-tail de fundo de funil + calendário de conteúdo + páginas. ⬜ Pendente.
 
-1. **Fase 1 (agora):** validar venda em estética (1º cliente → 1º retainer → case).
-2. **Fase 2:** padronizar fábrica (templates + playbook de produção repetível) e escalar p/ 5-10 clínicas.
-3. **Fase 3:** replicar playbook para vertical adjacente de ticket maior (dental/odonto — também já tem domínio via Seven-MD) ou jurídico. A fábrica e a esteira de venda são replicáveis; troca-se os templates e o nicho.
-4. **Fase 4 (opcional, se houver caixa/servidor):** produtizar o que mais se repetir entre clientes num micro-SaaS vertical (volta à "Opção A" do brainstorm, agora financiada pela encomenda).
+**Métricas (a definir junto com o plano de SEO):** tráfego orgânico → taxa de cadastro (lead) → taxa lead→call → taxa call→venda → 1º retainer. (As antigas métricas D+30/60/90 pressupunham prospecção local e foram descartadas.)
+
+## 8. Roadmap de Expansão
+
+1. **Fase 1 (agora):** fechar o funil A — página B2B + plano SEO → 1º lead → 1ª venda → 1º retainer → case.
+2. **Fase 2:** padronizar fábrica (templates + playbook) e escalar conteúdo SEO (mais artigos = mais leads compostos).
+3. **Fase 3:** replicar para vertical adjacente (dental/odonto via Seven-MD, ou jurídico). Fábrica + funil são replicáveis; troca-se templates, conteúdo e nicho.
+4. **Fase 4 — Funil C (produto self-service):** transformar a fábrica artesanal num PRODUTO onde a clínica se cadastra e gera o próprio site/sistema (SaaS-like, autoatendimento via SEO). É o destino que escala sem o tempo do usuário — mas exige servidor + multi-tenant + billing, então **só quando a Fase 1 estiver gerando caixa**. Financiado pela encomenda.
 
 ---
 
 ## Verificação (como testar a estratégia end-to-end)
 
-Esta é uma estratégia de negócio, não código — a "verificação" é a execução validada por mercado:
+1. **Fábrica funciona:** ✅ demo Aurora produzida pelos squads e no ar.
+2. **Demo comunica premium:** ✅ redesign sage/dourado (Stitch) no ar — prova visual que diferencia.
+3. **Página B2B capta:** construir a página de captação B2B; testar se um dono de clínica entende a oferta em 30s e se cadastra.
+4. **SEO traz tráfego:** após ligar o SEO, medir tráfego orgânico de termos B2B.
+5. **Lead vira venda:** 1º cadastro B2B → call → contrato (mesmo a preço de fundador) = funil validado.
+6. **Recorrência pega:** 1º retainer de automação ativo = LTV provado.
 
-1. **Fábrica funciona:** rodar o Agent Teams AI (comando da memória `project_agent_teams_ai.md`) e produzir a demo de clínica fictícia (site + LP + agendamento) end-to-end, com gate de build verde. Prova que a linha de produção entrega.
-2. **Oferta comunica valor:** gravar 1 Loom de teste sobre a demo e medir se o ROI fica claro em 3 min (testar com 1 pessoa de fora antes de mandar pra clínica real).
-3. **Mercado responde:** abordar 10 clínicas; meta de ≥1 resposta interessada (taxa de Loom personalizado costuma bater isso).
-4. **Venda fecha:** 1º contrato assinado (mesmo a preço de fundador) = modelo validado.
-5. **Recorrência pega:** 1º retainer de automação ativo = LTV provado, esteira completa.
-
-Critério de sucesso da estratégia: chegar ao passo 5 em ~90 dias. Se 10 Looms personalizados + preço de fundador não gerarem nenhuma venda em 60 dias, revisar oferta/abordagem antes de trocar de vertical.
+Critério de sucesso: chegar ao passo 6. Kill/revisão: se a página B2B + SEO não gerarem nenhum lead qualificado em 90 dias após ligados, revisar conteúdo/keywords/oferta antes de trocar de vertical.
 
 ---
 
 ## Anexo: Mapeamento de Squads por Sprint Macro
 
-Aplica a arquitetura da seção 5 (1 squad ativo por vez; cada squad = 1 Lead Opus High + 2 Operadores Sonnet Low + 1 Revisor Sonnet High; hand-off doc + CLAUDE.md ao fechar).
-
-As tarefas de **código** do plano de execução são agrupadas em sprints macro, um squad por vez:
-
-| Sprint macro | Squad | Escopo (tarefas de código) | Hand-off ao fechar |
+| Sprint macro | Squad | Escopo (código) | Hand-off |
 |---|---|---|---|
-| **S1 — Base** | Squad A | Avaliar e decidir base (Estetia vs template novo); montar esqueleto do repo | Doc: base escolhida + estrutura + como rodar. CLAUDE.md inicial do repo. |
-| **S2 — Vitrine** | Squad B (liga após desligar A) | Demo de clínica fictícia: home + LP de conversão + agendamento; build verde | Doc: páginas feitas, decisões de UX, estado, pendências. CLAUDE.md atualizado. |
-| **S3 — Automação** | Squad C (liga após desligar B) | Fluxo de lembrete 24h/2h + follow-up; deploy standalone da demo | Doc: automação, como testar, URL da demo, gotchas de deploy. CLAUDE.md atualizado. |
+| **S1 — Base** | Squad A | Decidir base + esqueleto | Doc + CLAUDE.md inicial ✅ |
+| **S2 — Vitrine** | Squad B | Demo: home + LP + agendamento | Doc + CLAUDE.md ✅ |
+| **S3 — Automação** | Squad C | Lembrete 24h/2h + deploy | Doc + URL demo ✅ |
+| **S4 — Página B2B** (próximo) | Squad D | Página de captação B2B (fala com o dono) + integração com a demo | Doc + CLAUDE.md |
 
-Regras operacionais (duras):
-- **Nunca dois squads ligados ao mesmo tempo** (OOM). Fechar um, fazer hand-off, desligar, ligar o próximo.
-- Cada sprint macro termina com: build verde + doc de hand-off (7 seções) + CLAUDE.md atualizado, validados pelo Revisor.
-- As tarefas de **negócio** (oferta, lista de clínicas, Loom, abordagem, venda) são do usuário — não usam squad.
+Regras (duras): nunca 2 squads ligados juntos (OOM); cada sprint fecha com build verde + hand-off 7 seções + CLAUDE.md, validados pelo Revisor. Tarefas de **negócio** (oferta, conteúdo SEO, fechamento) são do usuário — não usam squad.
 
-As 9 tarefas detalhadas (com TDD/commits onde há código e checklists onde é negócio) vivem em `projeto-novo/plano-execucao.md`, a ser atualizado para refletir este mapeamento de squads na próxima edição (fora do plan mode).
+Plano de execução detalhado em `Docs/plano-execucao.md`.

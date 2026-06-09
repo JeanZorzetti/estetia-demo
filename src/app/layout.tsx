@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
-import { clientConfig } from "@/config/client";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: `${clientConfig.clinicName} | Estética de Luxo`,
-  description: clientConfig.heroSubtitle,
+  title: "EstetiaCRM | Sites e automação que enchem a agenda da sua clínica",
+  description:
+    "Sites de alta conversão + automação que reduz faltas e captura cada lead para clínicas de estética. Entrega premium em 1 semana.",
 };
 
 export default function RootLayout({
