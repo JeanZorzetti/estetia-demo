@@ -41,4 +41,52 @@
       );
     }
   }
+
+  /* Blog article prose (post.content is a trusted HTML string from src/lib/blog/posts) */
+  .blog-content {
+    @apply text-on-surface leading-relaxed;
+  }
+  .blog-content p {
+    @apply mb-6 text-[17px] text-on-surface-variant;
+  }
+  .blog-content h2 {
+    @apply font-display text-3xl mt-12 mb-5 text-on-surface;
+  }
+  .blog-content h3 {
+    @apply font-display text-xl mt-8 mb-3 text-on-surface;
+  }
+  .blog-content ul,
+  .blog-content ol {
+    @apply mb-6 pl-6 space-y-2 text-on-surface-variant;
+  }
+  .blog-content ul {
+    @apply list-disc;
+  }
+  .blog-content ol {
+    @apply list-decimal;
+  }
+  .blog-content a {
+    @apply text-primary underline underline-offset-4 hover:text-gold-accent transition-colors;
+  }
+  .blog-content strong {
+    @apply text-on-surface font-semibold;
+  }
+  .blog-content table {
+    @apply w-full mb-8 text-sm border-collapse;
+  }
+  .blog-content th {
+    @apply text-left bg-surface-container px-4 py-3 font-semibold border-b border-clinical-gray;
+  }
+  .blog-content td {
+    @apply px-4 py-3 border-b border-clinical-gray/40 text-on-surface-variant align-top;
+  }
+  .blog-content .callout-stat {
+    @apply bg-soft-beige border-l-4 border-gold-accent rounded-r-2xl px-6 py-5 mb-8 text-on-surface;
+  }
+  .blog-content .callout-warning {
+    @apply bg-surface-container border-l-4 border-primary rounded-r-2xl px-6 py-5 mb-8 text-on-surface;
+  }
+  .blog-content .callout-cta {
+    @apply bg-primary/10 border border-primary/30 rounded-2xl px-6 py-6 mb-8 text-on-surface text-center;
+  }
 }

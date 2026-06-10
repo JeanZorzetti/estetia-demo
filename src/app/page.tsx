@@ -20,6 +20,7 @@ export default function HomePage() {
           <nav className="hidden md:flex gap-8 items-center text-sm">
             <a className="text-on-surface-variant hover:text-primary transition-colors" href="#solucao">O que fazemos</a>
             <a className="text-on-surface-variant hover:text-primary transition-colors" href="#como-funciona">Como funciona</a>
+            <Link className="text-on-surface-variant hover:text-primary transition-colors" href="/blog">Blog</Link>
             <a className="text-on-surface-variant hover:text-primary transition-colors" href="#orcamento">Orçamento</a>
           </nav>
           <a className="inline-flex bg-primary text-on-primary px-6 py-3 rounded-full text-sm font-semibold hover:bg-primary-container hover:text-on-primary-container transition-colors" href="#orcamento">
@@ -163,7 +164,8 @@ export default function HomePage() {
             <Link className="text-sm text-on-surface-variant hover:text-primary transition-colors" href="/termos">Termos de Uso</Link>
           </div>
           <div className="flex flex-col gap-3">
-            <span className="text-sm font-bold uppercase tracking-wider mb-2">Contato</span>
+            <span className="text-sm font-bold uppercase tracking-wider mb-2">Conteúdo</span>
+            <Link className="text-sm text-on-surface-variant hover:text-primary transition-colors" href="/blog">Blog</Link>
             <Link className="text-sm text-on-surface-variant hover:text-primary transition-colors" href={c.demoUrl}>Ver demo</Link>
             <a className="text-sm text-on-surface-variant hover:text-primary transition-colors" href="#orcamento">Orçamento</a>
           </div>
