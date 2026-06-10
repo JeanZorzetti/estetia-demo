@@ -86,8 +86,8 @@ export default function HomePage() {
       {/* Proof (demo) */}
       <section className="py-24 px-6 bg-warm-white">
         <div className="max-w-[1200px] mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-          <div className="lg:col-span-7 relative rounded-3xl overflow-hidden shadow-[0_20px_50px_rgba(0,0,0,0.08)]">
-            <img alt="Demo da clínica" className="w-full h-auto object-cover aspect-video" src={c.hero.image} />
+          <div className="lg:col-span-7 relative rounded-3xl overflow-hidden shadow-[0_20px_50px_rgba(0,0,0,0.08)] border border-clinical-gray/30">
+            <img alt="Print real da demo Clínica Aurora" className="w-full h-auto object-cover aspect-video" src="/demo-aurora.jpg" />
           </div>
           <div className="lg:col-span-5 lg:pl-12 flex flex-col items-start gap-6">
             <h2 className="font-display text-4xl">{c.proof.title}</h2>
@@ -159,8 +159,8 @@ export default function HomePage() {
           </div>
           <div className="flex flex-col gap-3">
             <span className="text-sm font-bold uppercase tracking-wider mb-2">Links</span>
-            <a className="text-sm text-on-surface-variant hover:text-primary transition-colors" href="#">Privacidade</a>
-            <a className="text-sm text-on-surface-variant hover:text-primary transition-colors" href="#">Termos de Uso</a>
+            <Link className="text-sm text-on-surface-variant hover:text-primary transition-colors" href="/privacidade">Privacidade</Link>
+            <Link className="text-sm text-on-surface-variant hover:text-primary transition-colors" href="/termos">Termos de Uso</Link>
           </div>
           <div className="flex flex-col gap-3">
             <span className="text-sm font-bold uppercase tracking-wider mb-2">Contato</span>

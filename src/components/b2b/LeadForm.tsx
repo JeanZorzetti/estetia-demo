@@ -13,14 +13,29 @@ const labelClass = "block text-sm font-medium text-on-surface mb-2";
 export default function LeadForm() {
   const [form, setForm] = useState<LeadState>(INITIAL);
   const [submitted, setSubmitted] = useState(false);
+  const [sending, setSending] = useState(false);
+  const [error, setError] = useState(false);
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) =>
     setForm((p) => ({ ...p, [e.target.name]: e.target.value }));
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // Mock submit — captura de lead será integrada depois (DB/CRM).
-    setSubmitted(true);
+    setSending(true);
+    setError(false);
+    try {
+      const res = await fetch("/api/lead", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(form),
+      });
+      if (!res.ok) throw new Error(`lead api ${res.status}`);
+      setSubmitted(true);
+    } catch {
+      setError(true);
+    } finally {
+      setSending(false);
+    }
   };
 
   if (submitted) {
@@ -92,10 +107,16 @@ export default function LeadForm() {
         </div>
         <button
           type="submit"
-          className="w-full bg-primary text-on-primary py-4 rounded-xl text-sm font-semibold uppercase tracking-widest hover:bg-primary-container hover:text-on-primary-container transition-colors shadow-md mt-2"
+          disabled={sending}
+          className="w-full bg-primary text-on-primary py-4 rounded-xl text-sm font-semibold uppercase tracking-widest hover:bg-primary-container hover:text-on-primary-container transition-colors shadow-md mt-2 disabled:opacity-60 disabled:cursor-wait"
         >
-          Quero meu site
+          {sending ? "Enviando..." : "Quero meu site"}
         </button>
+        {error && (
+          <p role="alert" className="text-sm text-red-600 text-center">
+            Não conseguimos enviar agora. Tente novamente em instantes.
+          </p>
+        )}
         <div className="flex items-center justify-center gap-2 text-on-surface-variant">
           <span className="material-symbols-outlined text-[18px] text-gold-accent">
             bolt
