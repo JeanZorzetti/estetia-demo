@@ -9,6 +9,11 @@ const nextConfig: NextConfig = {
         destination: "/blog/quanto-custa-site-para-clinica-de-estetica",
         permanent: true,
       },
+      {
+        source: "/blog/site-para-clinica-de-estetica",
+        destination: "/blog/site-para-clinica-de-estetica-guia",
+        permanent: true,
+      },
     ];
   },
 };
