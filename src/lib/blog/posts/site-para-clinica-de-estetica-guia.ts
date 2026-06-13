@@ -156,9 +156,9 @@ export const post: BlogPost = {
 
 <h2>Quanto Investir (e o Que Esperar de Retorno)</h2>
 
-<p>Um site profissional de captação custa entre R$3.000 e R$5.000 no mercado brasileiro em 2026, com manutenção e automação em mensalidades de R$500-1.500 — os números completos por faixa estão no nosso guia <a href="/quanto-custa-site-para-clinica-de-estetica">quanto custa um site para clínica de estética</a>. O retorno vem por três caminhos somados: pacientes novos do Google, conversão maior de quem já chega pelo Instagram (que finalmente tem para onde ir além do direct) e faltas recuperadas pela automação.</p>
+<p>Um site profissional de captação custa entre R$3.000 e R$5.000 no mercado brasileiro em 2026, com manutenção e automação em mensalidades de R$500-1.500 — os números completos por faixa estão no nosso guia <a href="/blog/quanto-custa-site-para-clinica-de-estetica">quanto custa um site para clínica de estética</a>. O retorno vem por três caminhos somados: pacientes novos do Google, conversão maior de quem já chega pelo Instagram (que finalmente tem para onde ir além do direct) e faltas recuperadas pela automação.</p>
 
-<p>Para visualizar tudo isso aplicado, veja <a href="/exemplos-sites-clinica-estetica">exemplos reais de site de clínica de estética</a> com a anatomia de conversão comentada seção por seção.</p>
+<p>Para visualizar tudo isso aplicado, veja <a href="/blog/exemplos-sites-clinica-estetica">exemplos reais de site de clínica de estética</a> com a anatomia de conversão comentada seção por seção.</p>
 
 <div class="callout-cta">
   <strong>Quer um site assim para a sua clínica?</strong> A Estetia entrega o pacote completo — site de captação + automação de lembretes — em 1 semana, com preço fechado. <a href="/#orcamento">Peça uma avaliação gratuita</a>: resposta humana em até 1 hora.

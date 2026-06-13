@@ -142,7 +142,7 @@ export const post: BlogPost = {
   <strong>88% dos pacientes pesquisam online antes de marcar</strong> uma avaliação — e a busca por "clínica de estética" no Google ultrapassa 20 mil pesquisas mensais no Brasil. Quem não aparece nessa busca entrega o paciente para a concorrente que aparece.
 </div>
 
-<p>Agora some a segunda ponta: pacientes que agendam e faltam. O no-show médio do setor fica entre 15% e 30% das consultas. Um site com <strong>automação de lembrete</strong> (24h e 2h antes) corta faltas em 20-30% — para uma clínica de 80 consultas/mês com ticket de R$350, isso significa de R$16 a R$24 mil de receita recuperada por mês. Detalhamos essa conta no nosso <a href="/site-para-clinica-de-estetica-guia">guia completo de site para clínica de estética</a>, e a gestão interna de faltas é tema deste <a href="https://estetiacrm.com.br/blog/como-reduzir-no-show-em-clinicas-de-estetica" rel="noopener">guia de redução de no-show do Estetia CRM</a>.</p>
+<p>Agora some a segunda ponta: pacientes que agendam e faltam. O no-show médio do setor fica entre 15% e 30% das consultas. Um site com <strong>automação de lembrete</strong> (24h e 2h antes) corta faltas em 20-30% — para uma clínica de 80 consultas/mês com ticket de R$350, isso significa de R$16 a R$24 mil de receita recuperada por mês. Detalhamos essa conta no nosso <a href="/blog/site-para-clinica-de-estetica-guia">guia completo de site para clínica de estética</a>, e a gestão interna de faltas é tema deste <a href="https://estetiacrm.com.br/blog/como-reduzir-no-show-em-clinicas-de-estetica" rel="noopener">guia de redução de no-show do Estetia CRM</a>.</p>
 
 <h2>Template, Freelancer, Agência ou Estúdio Especializado?</h2>
 
@@ -156,7 +156,7 @@ export const post: BlogPost = {
 <p>Entrega completa e processo maduro, mas com prazo de 4-8 semanas e custo de estrutura embutido. Faz sentido para redes com orçamento de marketing estabelecido.</p>
 
 <h3>Estúdio especializado no nicho (R$3.500-7.000)</h3>
-<p>O meio-termo que mais cresce: especialistas em clínicas de estética que já chegam com a estrutura de conversão pronta — página que vende avaliação, formulário integrado, automação anti-falta — e entregam em até 1 semana porque não estão reinventando o projeto a cada cliente. Para ver na prática como fica, veja <a href="/exemplos-sites-clinica-estetica">exemplos reais de sites de clínica de estética</a>.</p>
+<p>O meio-termo que mais cresce: especialistas em clínicas de estética que já chegam com a estrutura de conversão pronta — página que vende avaliação, formulário integrado, automação anti-falta — e entregam em até 1 semana porque não estão reinventando o projeto a cada cliente. Para ver na prática como fica, veja <a href="/blog/exemplos-sites-clinica-estetica">exemplos reais de sites de clínica de estética</a>.</p>
 
 <div class="callout-cta">
   <strong>Quer saber quanto custaria para a SUA clínica?</strong> A Estetia entrega site de captação + automação de lembretes em 1 semana, com preço fechado — sem custo oculto, domínio no seu nome. <a href="/#orcamento">Peça uma avaliação gratuita aqui</a> e receba resposta em até 1 hora.

@@ -123,7 +123,7 @@ export const post: BlogPost = {
   </tbody>
 </table>
 
-<p>E o que acontece <em>depois</em> do envio é tão importante quanto: confirmação automática, lembrete 24h/2h antes da avaliação (o antídoto das faltas de 15-30% do setor) e fluxo de reativação. A estrutura completa está no nosso <a href="/site-para-clinica-de-estetica-guia">guia do site que converte</a>.</p>
+<p>E o que acontece <em>depois</em> do envio é tão importante quanto: confirmação automática, lembrete 24h/2h antes da avaliação (o antídoto das faltas de 15-30% do setor) e fluxo de reativação. A estrutura completa está no nosso <a href="/blog/site-para-clinica-de-estetica-guia">guia do site que converte</a>.</p>
 
 <h2>A Identidade Visual: o Que a Paleta Comunica</h2>
 
@@ -149,7 +149,7 @@ export const post: BlogPost = {
   <li>Existe <strong>automação</strong> depois do lead (confirmação, lembrete, reativação)?</li>
 </ol>
 
-<p>Passe qualquer "exemplo bonito" por esse checklist e a diferença entre vitrine e máquina de captação fica visível em 2 minutos. Quanto ao investimento para ter um site nesse padrão, os números completos por faixa estão em <a href="/quanto-custa-site-para-clinica-de-estetica">quanto custa um site para clínica de estética</a>.</p>
+<p>Passe qualquer "exemplo bonito" por esse checklist e a diferença entre vitrine e máquina de captação fica visível em 2 minutos. Quanto ao investimento para ter um site nesse padrão, os números completos por faixa estão em <a href="/blog/quanto-custa-site-para-clinica-de-estetica">quanto custa um site para clínica de estética</a>.</p>
 
 <div class="callout-cta">
   <strong>Gostou do padrão da Aurora?</strong> A Estetia constrói exatamente esse site para a sua clínica — identidade própria, estrutura de conversão completa e automação anti-falta — em 1 semana. <a href="/#orcamento">Peça sua avaliação gratuita</a> e veja como ficaria com a sua marca.
