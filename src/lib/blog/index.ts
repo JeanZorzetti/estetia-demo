@@ -9,6 +9,14 @@ import { post as wixOuProfissional } from "./posts/wix-ou-site-profissional-clin
 import { post as quantoTempoLeva } from "./posts/quanto-tempo-leva-site-clinica-estetica";
 import { post as briefing } from "./posts/briefing-site-clinica-de-estetica";
 import { post as quandoRefazer } from "./posts/quando-refazer-site-clinica-de-estetica";
+import { post as apareceGoogle } from "./posts/como-aparecer-no-google-clinica-de-estetica";
+import { post as perfilEmpresa } from "./posts/google-perfil-empresa-clinica-de-estetica";
+import { post as instagramOuSite } from "./posts/instagram-ou-site-clinica-de-estetica";
+import { post as fotosSite } from "./posts/fotos-para-site-clinica-de-estetica";
+import { post as textosSite } from "./posts/textos-para-site-clinica-de-estetica";
+import { post as botaoWhatsapp } from "./posts/botao-whatsapp-site-clinica-de-estetica";
+import { post as avaliacoesGoogle } from "./posts/avaliacoes-google-clinica-de-estetica";
+import { post as errosSite } from "./posts/erros-site-clinica-de-estetica";
 
 export type { BlogPost, FAQItem } from "./types";
 
@@ -22,6 +30,14 @@ export const blogPosts: BlogPost[] = [
   quantoTempoLeva,
   briefing,
   quandoRefazer,
+  apareceGoogle,
+  perfilEmpresa,
+  instagramOuSite,
+  fotosSite,
+  textosSite,
+  botaoWhatsapp,
+  avaliacoesGoogle,
+  errosSite,
 ];
 
 export function getPostBySlug(slug: string): BlogPost | undefined {
