@@ -20,6 +20,7 @@ import { post as errosSite } from "./posts/erros-site-clinica-de-estetica";
 import { post as atrairPacientes } from "./posts/como-atrair-pacientes-clinica-de-estetica";
 import { post as marketingDigital } from "./posts/marketing-digital-para-clinica-de-estetica";
 import { post as presencaOnline } from "./posts/presenca-online-clinica-de-estetica";
+import { post as agenciaOuFreelancer } from "./posts/agencia-ou-freelancer-site-clinica-de-estetica";
 
 export type { BlogPost, FAQItem } from "./types";
 
@@ -44,6 +45,7 @@ export const blogPosts: BlogPost[] = [
   atrairPacientes,
   marketingDigital,
   presencaOnline,
+  agenciaOuFreelancer,
 ];
 
 export function getPostBySlug(slug: string): BlogPost | undefined {
