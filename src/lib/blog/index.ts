@@ -17,6 +17,9 @@ import { post as textosSite } from "./posts/textos-para-site-clinica-de-estetica
 import { post as botaoWhatsapp } from "./posts/botao-whatsapp-site-clinica-de-estetica";
 import { post as avaliacoesGoogle } from "./posts/avaliacoes-google-clinica-de-estetica";
 import { post as errosSite } from "./posts/erros-site-clinica-de-estetica";
+import { post as atrairPacientes } from "./posts/como-atrair-pacientes-clinica-de-estetica";
+import { post as marketingDigital } from "./posts/marketing-digital-para-clinica-de-estetica";
+import { post as presencaOnline } from "./posts/presenca-online-clinica-de-estetica";
 
 export type { BlogPost, FAQItem } from "./types";
 
@@ -38,6 +41,9 @@ export const blogPosts: BlogPost[] = [
   botaoWhatsapp,
   avaliacoesGoogle,
   errosSite,
+  atrairPacientes,
+  marketingDigital,
+  presencaOnline,
 ];
 
 export function getPostBySlug(slug: string): BlogPost | undefined {
