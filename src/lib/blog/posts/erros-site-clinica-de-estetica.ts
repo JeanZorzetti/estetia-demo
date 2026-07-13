@@ -11,9 +11,9 @@ export const post: BlogPost = {
   date: "2026-07-12",
   lastModified: "2026-07-12",
   category: "Site & Conversão",
-  image: "/demo-aurora.jpg",
+  image: "/blog/erros-site-clinica-de-estetica.jpg",
   imageAlt:
-    "Análise de erros de conversão em site de clínica de estética",
+    "Homem com as mãos no rosto diante do computador, frustrado com o site que não converte",
   author: "Equipe Estetia",
   relatedSlugs: [
     "quando-refazer-site-clinica-de-estetica",

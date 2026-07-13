@@ -11,9 +11,9 @@ export const post: BlogPost = {
   date: "2026-07-12",
   lastModified: "2026-07-12",
   category: "Marketing & Captação",
-  image: "/demo-aurora.jpg",
+  image: "/blog/presenca-online-clinica-de-estetica.jpg",
   imageAlt:
-    "Ecossistema de presença online de clínica de estética em vários dispositivos",
+    "Notebook, tablet e celular lado a lado — a clínica presente em todos os dispositivos",
   author: "Equipe Estetia",
   relatedSlugs: [
     "instagram-ou-site-clinica-de-estetica",

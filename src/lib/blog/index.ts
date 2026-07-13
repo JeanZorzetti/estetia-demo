@@ -24,6 +24,10 @@ import { post as agenciaOuFreelancer } from "./posts/agencia-ou-freelancer-site-
 
 export type { BlogPost, FAQItem } from "./types";
 
+/** Every cover is downloaded at this size — og:image spec and CLS-free <img>. */
+export const COVER_WIDTH = 1200;
+export const COVER_HEIGHT = 630;
+
 export const blogPosts: BlogPost[] = [
   quantoCustaSite,
   siteGuia,

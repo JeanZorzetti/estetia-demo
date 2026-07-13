@@ -1,7 +1,13 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { blogPosts, getPostBySlug, getRelatedPosts } from "@/lib/blog";
+import {
+  COVER_HEIGHT,
+  COVER_WIDTH,
+  blogPosts,
+  getPostBySlug,
+  getRelatedPosts,
+} from "@/lib/blog";
 
 const SITE_URL = "https://estetia.estetiacrm.com.br";
 
@@ -19,6 +25,12 @@ export async function generateMetadata({
   if (!post) return { title: "Artigo não encontrado" };
 
   const url = `${SITE_URL}/blog/${post.slug}`;
+  const image = {
+    url: `${SITE_URL}${post.image}`,
+    width: COVER_WIDTH,
+    height: COVER_HEIGHT,
+    alt: post.imageAlt,
+  };
   return {
     title: `${post.title} | Estetia`,
     description: post.aiDescription ?? post.excerpt,
@@ -30,7 +42,13 @@ export async function generateMetadata({
       type: "article",
       publishedTime: post.date,
       modifiedTime: post.lastModified ?? post.date,
-      images: [{ url: `${SITE_URL}${post.image}` }],
+      images: [image],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: post.title,
+      description: post.excerpt,
+      images: [image],
     },
   };
 }
@@ -129,8 +147,11 @@ export default async function BlogPostPage({
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
           src={post.image}
-          alt={post.imageAlt ?? post.title}
-          className="w-full rounded-3xl border border-clinical-gray/30 shadow-sm mb-12"
+          alt={post.imageAlt}
+          width={COVER_WIDTH}
+          height={COVER_HEIGHT}
+          fetchPriority="high"
+          className="w-full h-auto rounded-3xl border border-clinical-gray/30 shadow-sm mb-12"
         />
 
         <article

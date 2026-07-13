@@ -11,9 +11,9 @@ export const post: BlogPost = {
   date: "2026-06-10",
   lastModified: "2026-06-10",
   category: "Site & Captação",
-  image: "/demo-aurora.jpg",
+  image: "/blog/site-para-clinica-de-estetica-guia.jpg",
   imageAlt:
-    "Página inicial de site profissional de clínica de estética com botão de agendamento em destaque",
+    "Balcão de recepção de clínica com tablet de atendimento",
   author: "Equipe Estetia",
   relatedSlugs: [
     "quanto-custa-site-para-clinica-de-estetica",

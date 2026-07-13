@@ -3,6 +3,7 @@ import Script from "next/script";
 import "./globals.css";
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://estetia.estetiacrm.com.br"),
   title: "Estetia | Sites e automação que enchem a agenda da sua clínica",
   description:
     "Sites de alta conversão + automação que reduz faltas e captura cada lead para clínicas de estética. Entrega premium em 1 semana.",

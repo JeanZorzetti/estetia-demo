@@ -11,9 +11,9 @@ export const post: BlogPost = {
   date: "2026-07-12",
   lastModified: "2026-07-12",
   category: "Google & SEO Local",
-  image: "/demo-aurora.jpg",
+  image: "/blog/avaliacoes-google-clinica-de-estetica.jpg",
   imageAlt:
-    "Avaliações 5 estrelas de clínica de estética no Google no celular",
+    "Cinco estrelas amarelas enfileiradas, representando a nota máxima nas avaliações do Google",
   author: "Equipe Estetia",
   relatedSlugs: [
     "google-perfil-empresa-clinica-de-estetica",

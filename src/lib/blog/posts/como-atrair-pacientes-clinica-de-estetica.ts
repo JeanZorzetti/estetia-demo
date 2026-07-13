@@ -11,9 +11,9 @@ export const post: BlogPost = {
   date: "2026-07-12",
   lastModified: "2026-07-12",
   category: "Marketing & Captação",
-  image: "/demo-aurora.jpg",
+  image: "/blog/como-atrair-pacientes-clinica-de-estetica.jpg",
   imageAlt:
-    "Recepção movimentada de clínica de estética com agenda cheia",
+    "Paciente recebendo tratamento facial em maca de clínica de estética",
   author: "Equipe Estetia",
   relatedSlugs: [
     "como-aparecer-no-google-clinica-de-estetica",

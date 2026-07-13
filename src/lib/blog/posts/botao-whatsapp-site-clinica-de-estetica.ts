@@ -11,9 +11,9 @@ export const post: BlogPost = {
   date: "2026-07-12",
   lastModified: "2026-07-12",
   category: "Site & Conversão",
-  image: "/demo-aurora.jpg",
+  image: "/blog/botao-whatsapp-site-clinica-de-estetica.jpg",
   imageAlt:
-    "Botão flutuante de WhatsApp em site de clínica de estética no celular",
+    "Mão segurando o celular com uma conversa aberta, como um paciente falando com a clínica pelo WhatsApp",
   author: "Equipe Estetia",
   relatedSlugs: [
     "site-clinica-estetica-agendamento-online",

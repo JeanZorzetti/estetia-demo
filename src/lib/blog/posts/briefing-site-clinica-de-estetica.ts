@@ -11,8 +11,9 @@ export const post: BlogPost = {
   date: "2026-07-12",
   lastModified: "2026-07-12",
   category: "Site & Captação",
-  image: "/demo-aurora.jpg",
-  imageAlt: "Checklist de briefing para site de clínica de estética",
+  image: "/blog/briefing-site-clinica-de-estetica.jpg",
+  imageAlt:
+    "Mão preenchendo à caneta um caderno de anotações — o briefing do site da clínica",
   author: "Equipe Estetia",
   relatedSlugs: [
     "quanto-tempo-leva-site-clinica-estetica",

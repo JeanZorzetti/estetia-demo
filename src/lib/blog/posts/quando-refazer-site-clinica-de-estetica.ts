@@ -11,9 +11,9 @@ export const post: BlogPost = {
   date: "2026-07-12",
   lastModified: "2026-07-12",
   category: "Site & Captação",
-  image: "/demo-aurora.jpg",
+  image: "/blog/quando-refazer-site-clinica-de-estetica.jpg",
   imageAlt:
-    "Antes e depois de redesign de site de clínica de estética",
+    "Monitor antigo com a tela quebrada jogado no chão — o sinal de um site obsoleto",
   author: "Equipe Estetia",
   relatedSlugs: [
     "exemplos-sites-clinica-estetica",

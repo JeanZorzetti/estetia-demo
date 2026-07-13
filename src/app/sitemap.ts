@@ -17,6 +17,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     lastModified: new Date(post.lastModified ?? post.date),
     changeFrequency: "monthly",
     priority: 0.8,
+    images: [`${SITE_URL}${post.image}`],
   }));
 
   return [...staticPages, ...postPages];

@@ -11,9 +11,9 @@ export const post: BlogPost = {
   date: "2026-07-12",
   lastModified: "2026-07-12",
   category: "Site & Captação",
-  image: "/demo-aurora.jpg",
+  image: "/blog/agencia-ou-freelancer-site-clinica-de-estetica.jpg",
   imageAlt:
-    "Dona de clínica de estética avaliando propostas de fornecedores de site",
+    "Aperto de mãos entre dois profissionais fechando o contrato do site da clínica",
   author: "Equipe Estetia",
   relatedSlugs: [
     "quanto-custa-site-para-clinica-de-estetica",

@@ -11,9 +11,9 @@ export const post: BlogPost = {
   date: "2026-07-12",
   lastModified: "2026-07-12",
   category: "Site & Conversão",
-  image: "/demo-aurora.jpg",
+  image: "/blog/fotos-para-site-clinica-de-estetica.jpg",
   imageAlt:
-    "Recepção de clínica de estética fotografada com luz natural para o site",
+    "Mulher fotografando com câmera profissional — produção de fotos reais para o site",
   author: "Equipe Estetia",
   relatedSlugs: [
     "exemplos-sites-clinica-estetica",

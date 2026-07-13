@@ -11,9 +11,9 @@ export const post: BlogPost = {
   date: "2026-07-12",
   lastModified: "2026-07-12",
   category: "Site & Captação",
-  image: "/demo-aurora.jpg",
+  image: "/blog/site-clinica-estetica-agendamento-online.jpg",
   imageAlt:
-    "Formulário de agendamento online em site de clínica de estética premium",
+    "Calendário aberto na tela do celular para marcar um horário na clínica",
   author: "Equipe Estetia",
   relatedSlugs: [
     "site-para-clinica-de-estetica-guia",

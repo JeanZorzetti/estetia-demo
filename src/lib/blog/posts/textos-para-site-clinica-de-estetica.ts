@@ -11,8 +11,9 @@ export const post: BlogPost = {
   date: "2026-07-12",
   lastModified: "2026-07-12",
   category: "Site & Conversão",
-  image: "/demo-aurora.jpg",
-  imageAlt: "Texto de site de clínica de estética sendo escrito",
+  image: "/blog/textos-para-site-clinica-de-estetica.jpg",
+  imageAlt:
+    "Mulher digitando em um notebook — a escrita dos textos do site da clínica",
   author: "Equipe Estetia",
   relatedSlugs: [
     "site-para-clinica-de-estetica-guia",

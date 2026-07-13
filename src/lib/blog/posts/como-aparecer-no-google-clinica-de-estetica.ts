@@ -11,9 +11,9 @@ export const post: BlogPost = {
   date: "2026-07-12",
   lastModified: "2026-07-12",
   category: "Google & SEO Local",
-  image: "/demo-aurora.jpg",
+  image: "/blog/como-aparecer-no-google-clinica-de-estetica.jpg",
   imageAlt:
-    "Resultados do Google para busca local de clínica de estética",
+    "Página de busca do Google aberta na tela de um computador",
   author: "Equipe Estetia",
   relatedSlugs: [
     "google-perfil-empresa-clinica-de-estetica",

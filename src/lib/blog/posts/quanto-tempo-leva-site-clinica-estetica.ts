@@ -11,8 +11,9 @@ export const post: BlogPost = {
   date: "2026-07-12",
   lastModified: "2026-07-12",
   category: "Site & Captação",
-  image: "/demo-aurora.jpg",
-  imageAlt: "Cronograma de entrega de site para clínica de estética",
+  image: "/blog/quanto-tempo-leva-site-clinica-estetica.jpg",
+  imageAlt:
+    "Relógio de bolso antigo em close, representando o prazo de entrega do site",
   author: "Equipe Estetia",
   relatedSlugs: [
     "quanto-custa-site-para-clinica-de-estetica",

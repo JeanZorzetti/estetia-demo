@@ -15,8 +15,10 @@ export interface BlogPost {
   date: string;
   lastModified?: string;
   category: string;
+  /** Path under /public/blog — one image per post, 1200x630 (og:image ratio). */
   image: string;
-  imageAlt?: string;
+  /** Required: describes the photo itself, not the article. Feeds <img alt> and og:image:alt. */
+  imageAlt: string;
   author: string;
   /** 8-12 entries — rendered on page AND emitted as FAQPage JSON-LD. */
   faqs: FAQItem[];

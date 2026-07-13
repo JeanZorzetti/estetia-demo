@@ -11,9 +11,9 @@ export const post: BlogPost = {
   date: "2026-07-12",
   lastModified: "2026-07-12",
   category: "Marketing & Captação",
-  image: "/demo-aurora.jpg",
+  image: "/blog/marketing-digital-para-clinica-de-estetica.jpg",
   imageAlt:
-    "Planejamento de marketing digital de clínica de estética com métricas",
+    "Painel de métricas de marketing digital exibido na tela de um notebook",
   author: "Equipe Estetia",
   relatedSlugs: [
     "como-atrair-pacientes-clinica-de-estetica",

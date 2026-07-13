@@ -11,9 +11,9 @@ export const post: BlogPost = {
   date: "2026-07-12",
   lastModified: "2026-07-12",
   category: "Marketing & Captação",
-  image: "/demo-aurora.jpg",
+  image: "/blog/instagram-ou-site-clinica-de-estetica.jpg",
   imageAlt:
-    "Dona de clínica de estética comparando Instagram e site no celular",
+    "Dedo tocando a pasta de redes sociais no celular, com os ícones de Instagram e TikTok",
   author: "Equipe Estetia",
   relatedSlugs: [
     "site-para-clinica-de-estetica-guia",

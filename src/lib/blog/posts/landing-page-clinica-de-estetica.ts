@@ -11,9 +11,9 @@ export const post: BlogPost = {
   date: "2026-07-12",
   lastModified: "2026-07-12",
   category: "Site & Captação",
-  image: "/demo-aurora.jpg",
+  image: "/blog/landing-page-clinica-de-estetica.jpg",
   imageAlt:
-    "Landing page de captação para clínica de estética com formulário em destaque",
+    "Monitor exibindo as telas de uma landing page em versão mobile",
   author: "Equipe Estetia",
   relatedSlugs: [
     "quanto-custa-site-para-clinica-de-estetica",

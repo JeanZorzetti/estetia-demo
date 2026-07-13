@@ -11,9 +11,9 @@ export const post: BlogPost = {
   date: "2026-06-10",
   lastModified: "2026-06-10",
   category: "Site & Captação",
-  image: "/demo-aurora.jpg",
+  image: "/blog/exemplos-sites-clinica-estetica.jpg",
   imageAlt:
-    "Demo real de site de clínica de estética premium com paleta verde sage e botão de agendamento",
+    "Notebook e monitor exibindo layouts de sites lado a lado sobre uma mesa branca",
   author: "Equipe Estetia",
   relatedSlugs: [
     "site-para-clinica-de-estetica-guia",

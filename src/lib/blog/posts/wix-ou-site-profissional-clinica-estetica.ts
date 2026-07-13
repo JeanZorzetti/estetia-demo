@@ -11,9 +11,9 @@ export const post: BlogPost = {
   date: "2026-07-12",
   lastModified: "2026-07-12",
   category: "Site & Captação",
-  image: "/demo-aurora.jpg",
+  image: "/blog/wix-ou-site-profissional-clinica-estetica.jpg",
   imageAlt:
-    "Comparação entre site genérico de construtor e site profissional de clínica de estética",
+    "Pilha de blocos de montar coloridos — o site feito de blocos prontos de template",
   author: "Equipe Estetia",
   relatedSlugs: [
     "quanto-custa-site-para-clinica-de-estetica",

@@ -1,12 +1,36 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { getAllPosts } from "@/lib/blog";
+import { COVER_HEIGHT, COVER_WIDTH, getAllPosts, getPostBySlug } from "@/lib/blog";
+
+const SITE_URL = "https://estetia.estetiacrm.com.br";
+const description =
+  "Guias práticos sobre site, captação de pacientes e marketing digital para donos de clínica de estética. Sem teoria vazia: números, checklists e exemplos reais.";
+// the pillar guide's cover doubles as the blog's social card
+const pillar = getPostBySlug("site-para-clinica-de-estetica-guia") ?? getAllPosts()[0];
+const ogImage = {
+  url: `${SITE_URL}${pillar.image}`,
+  width: COVER_WIDTH,
+  height: COVER_HEIGHT,
+  alt: pillar.imageAlt,
+};
 
 export const metadata: Metadata = {
   title: "Blog | Estetia — Captação de pacientes para clínicas de estética",
-  description:
-    "Guias práticos sobre site, captação de pacientes e marketing digital para donos de clínica de estética. Sem teoria vazia: números, checklists e exemplos reais.",
-  alternates: { canonical: "https://estetia.estetiacrm.com.br/blog" },
+  description,
+  alternates: { canonical: `${SITE_URL}/blog` },
+  openGraph: {
+    title: "Blog Estetia — Captação de pacientes para clínicas de estética",
+    description,
+    url: `${SITE_URL}/blog`,
+    type: "website",
+    images: [ogImage],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Blog Estetia — Captação de pacientes para clínicas de estética",
+    description,
+    images: [ogImage],
+  },
 };
 
 export default function BlogIndexPage() {
@@ -56,7 +80,11 @@ export default function BlogIndexPage() {
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 src={post.image}
-                alt={post.imageAlt ?? post.title}
+                alt={post.imageAlt}
+                width={COVER_WIDTH}
+                height={COVER_HEIGHT}
+                loading="lazy"
+                decoding="async"
                 className="w-full aspect-video object-cover"
               />
               <div className="p-6 flex flex-col flex-grow">
