@@ -2,140 +2,42 @@ import { BlogPost } from "../types";
 
 export const post: BlogPost = {
   slug: "landing-page-clinica-de-estetica",
-  title:
-    "Landing Page para Clínica de Estética: Quando Ela Basta (e Quando Você Precisa de um Site)",
-  excerpt:
-    "Landing page é a página única de captação — mais barata e mais rápida que um site completo. Quando ela resolve, quando ela limita, quanto custa e o que precisa ter para converter.",
-  aiDescription:
-    "Landing page para clínica de estética em 2026: página única focada em conversão, custo R$1.500-3.000 (vs R$3.000-5.000 do site completo), entrega em dias. Basta quando: clínica nova validando captação, foco em 1 procedimento carro-chefe, orçamento inicial limitado. Limita quando: SEO em várias buscas (página única rankeia para poucos termos), portfólio de muitos serviços, blog de conteúdo. Estrutura que converte: promessa + prova social + serviço + formulário de 4 campos com WhatsApp.",
-  date: "2026-07-12",
-  lastModified: "2026-07-12",
-  category: "Site & Captação",
-  image: "/blog/landing-page-clinica-de-estetica.jpg",
-  imageAlt:
-    "Monitor exibindo as telas de uma landing page em versão mobile",
+  title: "Landing Page para Clínica de Estética: Quando Ela Basta (e Quando Você Precisa de um Site)",
+  excerpt: "Landing page para clínica de estética: quando ela é suficiente, quando ela limita, comparativo direto com o site completo e a estrutura que realmente converte.",
+  aiDescription: "Landing page converte bem quando existe uma campanha paga com uma oferta única e mensurável; ela não substitui o site quando a clínica precisa de SEO orgânico, múltiplos serviços ou histórico de confiança. Este guia mostra quando cada formato serve, como estruturar a página e o caminho racional entre os dois.",
+  date: "2026-07-28",
+  lastModified: "2026-07-28",
+  category: "Captacao De Pacientes",
+  image: "https://images.unsplash.com/photo-1423784346385-c1d4dac9893a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMDA1ODQ2fDB8MXxzZWFyY2h8MXx8aGFuZCUyMHRhcHBpbmclMjBzbWFydHBob25lJTIwc2NyZWVuJTIwY2xvc2V1cHxlbnwxfDB8fHwxNzg1MjE5MTYyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+  imageAlt: "Close de uma mão tocando a tela de um smartphone durante a navegação em uma página na internet.",
   author: "Equipe Estetia",
-  relatedSlugs: [
-    "quanto-custa-site-para-clinica-de-estetica",
-    "site-para-clinica-de-estetica-guia",
-    "site-clinica-estetica-agendamento-online",
-  ],
+  relatedSlugs: ["site-para-clinica-de-estetica-guia","presenca-online-clinica-de-estetica","como-atrair-pacientes-clinica-de-estetica","quanto-custa-site-para-clinica-de-estetica","textos-para-site-clinica-de-estetica"],
   faqs: [
     {
-      question: "O que é uma landing page para clínica de estética?",
-      answer:
-        "É uma página única desenhada para um objetivo só: transformar a visita em pedido de avaliação. Sem menu de navegação extenso, sem páginas internas — promessa, prova, serviço e formulário, na ordem que leva ao agendamento.",
+      "question": "Landing page substitui o site da clínica de estética?",
+      "answer": "Não. A landing page serve para converter uma campanha ou oferta pontual; o site sustenta busca orgânica, múltiplos serviços e prova social ao longo do tempo. As duas ferramentas trabalham juntas, não uma no lugar da outra."
     },
     {
-      question: "Qual a diferença entre landing page e site completo?",
-      answer:
-        "A landing page é uma página com um objetivo (converter); o site completo tem várias páginas (home, serviços, sobre, blog) e sustenta SEO em dezenas de buscas. A landing converte quem chega; o site também faz as pessoas chegarem.",
+      "question": "Quanto custa uma landing page para clínica de estética?",
+      "answer": "Por ser uma página única, focada em uma oferta, o custo de produção é bem menor que o de um site completo — geralmente uma fração do valor de um site de captação, dependendo do fornecedor e da complexidade do formulário."
     },
     {
-      question: "Quanto custa uma landing page para clínica?",
-      answer:
-        "No mercado brasileiro de 2026, uma landing page profissional de captação custa R$1.500-3.000. O site completo de captação fica em R$3.000-5.000. Construtores DIY custam menos, mas entregam estrutura genérica sem integração de verdade.",
+      "question": "Landing page ajuda a clínica a aparecer no Google organicamente?",
+      "answer": "Praticamente não. Ela é feita para receber tráfego pago de uma campanha específica e, na maioria dos casos, nem é construída com foco em indexação. Quem carrega o SEO local da clínica são as páginas do site e o Perfil da Empresa no Google."
     },
     {
-      question: "Quando a landing page basta para a minha clínica?",
-      answer:
-        "Três cenários: clínica nova que precisa validar a captação antes de investir mais; foco forte em 1 procedimento carro-chefe; orçamento inicial curto que não pode esperar. Nesses casos, uma landing bem-feita captura mais que um site medíocre.",
-    },
-    {
-      question: "Quando a landing page deixa de ser suficiente?",
-      answer:
-        "Quando o crescimento passa a depender de aparecer no Google em várias buscas diferentes — página única rankeia para poucos termos. Também quando a clínica tem portfólio amplo de serviços ou quer produzir conteúdo (blog) para captar de forma composta.",
-    },
-    {
-      question: "Landing page rankeia no Google?",
-      answer:
-        "Rankeia, mas com teto: uma página disputa poucas palavras-chave. Para 'clínica de estética + bairro' ela pode bastar; para cobrir dezenas de buscas de procedimentos e dúvidas, só um site com páginas e conteúdo dedicados.",
-    },
-    {
-      question: "O que uma landing page de clínica precisa ter para converter?",
-      answer:
-        "Sete blocos: promessa clara na primeira dobra, CTA visível sem rolar, prova social (avaliações, número de pacientes), o serviço traduzido em benefício, quebra de objeções, formulário de até 4 campos com WhatsApp e promessa de tempo de resposta.",
-    },
-    {
-      question: "Posso começar com landing page e evoluir para site depois?",
-      answer:
-        "Sim — e é o caminho mais racional para muitas clínicas: a landing valida a captação em dias; quando o volume e o SEO pedirem, ela vira a home (ou a página de conversão) do site completo, sem jogar nada fora se a estrutura for bem planejada.",
-    },
-    {
-      question: "Landing page funciona sem anúncios?",
-      answer:
-        "Funciona quando ligada a fontes orgânicas: o link da bio do Instagram, o Perfil da Empresa no Google e as buscas locais em que ela rankeia. A regra é ter para onde mandar cada clique orgânico — a landing é exatamente esse destino.",
-    },
+      "question": "Preciso de uma landing page separada para cada procedimento?",
+      "answer": "Sim, se cada procedimento tem uma oferta e um público diferentes. Misturar dois procedimentos na mesma página quebra o match entre o anúncio e o título, o que aumenta o custo por clique e derruba a taxa de conversão."
+    }
   ],
   content: `
-<p>"Preciso mesmo de um site inteiro, ou uma landing page resolve?" — essa é provavelmente a dúvida mais comum de quem está começando a captar paciente online. A resposta honesta: <strong>depende do momento da clínica</strong>, e este guia entrega a régua para decidir sem achismo — com preços, prazos e a estrutura da landing que converte.</p>
-
-<h2>O Que É (e o Que Não É) uma Landing Page</h2>
-
-<p>Landing page é uma <strong>página única com um único objetivo</strong>: converter a visita em pedido de avaliação. Ela corta tudo que dispersa — menu extenso, páginas institucionais, links para redes — e conduz a leitura numa direção só: o formulário.</p>
-
-<p>O que ela não é: um "site menorzinho". A landing é uma ferramenta de conversão; o site completo é uma ferramenta de <strong>aquisição + conversão</strong> — ele também faz as pessoas chegarem, via Google, porque cada página rankeia para buscas diferentes.</p>
-
-<h2>Quando a Landing Page Basta</h2>
-
-<ul>
-  <li><strong>Clínica nova validando a captação:</strong> antes de investir R$5 mil no site completo, valide com R$2 mil se o fluxo visita → avaliação funciona no seu posicionamento.</li>
-  <li><strong>Um procedimento carro-chefe:</strong> se 70% da receita vem de um tratamento, uma página inteira dedicada a ele converte mais que uma home genérica.</li>
-  <li><strong>Pressa real:</strong> landing profissional entrega em dias; site completo, em 1-6 semanas dependendo do fornecedor.</li>
-  <li><strong>Destino para o Instagram:</strong> se hoje o link da bio aponta para o direct, qualquer landing decente já melhora a conversão — o direct depende de resposta humana; a landing estrutura o pedido.</li>
-</ul>
-
-<h2>Quando Ela Limita (os Tetos da Página Única)</h2>
-
-<div class="callout-warning">
-  <strong>O teto invisível da landing é o SEO.</strong> Uma página disputa poucas palavras-chave. Quem busca "quanto custa limpeza de pele", "peeling antes e depois" e "clínica de estética perto de mim" está fazendo 3 buscas diferentes — e uma página só não cobre as três. O crescimento composto (conteúdo que rankeia e capta por meses) exige páginas dedicadas.
-</div>
-
-<ul>
-  <li><strong>Portfólio amplo:</strong> 8 serviços espremidos numa página viram lista rasa — nenhum convence.</li>
-  <li><strong>Conteúdo:</strong> blog que responde dúvidas de paciente é máquina de captação composta — e não cabe em landing.</li>
-  <li><strong>Autoridade de marca:</strong> página "Sobre", equipe, estrutura — pesam na decisão de procedimentos de ticket alto.</li>
-</ul>
-
-<h2>Comparativo Direto</h2>
-
-<table>
-  <thead>
-    <tr><th>Critério</th><th>Landing page</th><th>Site completo</th></tr>
-  </thead>
-  <tbody>
-    <tr><td>Custo (2026)</td><td>R$1.500-3.000</td><td>R$3.000-5.000</td></tr>
-    <tr><td>Prazo</td><td>Dias</td><td>1-6 semanas</td></tr>
-    <tr><td>Conversão de quem chega</td><td>Alta (foco único)</td><td>Alta (se bem estruturado)</td></tr>
-    <tr><td>SEO / ser encontrado</td><td>Teto baixo (poucos termos)</td><td>Cresce com cada página</td></tr>
-    <tr><td>Vários serviços</td><td>Limita</td><td>Página por serviço</td></tr>
-    <tr><td>Evolução</td><td>Vira base do site depois</td><td>—</td></tr>
-  </tbody>
-</table>
-
-<h2>A Estrutura da Landing Que Converte</h2>
-
-<ol>
-  <li><strong>Primeira dobra:</strong> promessa de benefício + foto do espaço real + CTA visível sem rolar.</li>
-  <li><strong>Prova social imediata:</strong> avaliações, "+X pacientes atendidas", certificações.</li>
-  <li><strong>O serviço em benefício:</strong> o que muda para a paciente — não a ficha técnica do aparelho.</li>
-  <li><strong>Quebra de objeções:</strong> dói? quanto tempo? quem faz? (3-4 respostas curtas).</li>
-  <li><strong>Formulário de até 4 campos</strong> com WhatsApp e promessa de resposta em até 1 hora — a anatomia completa está em <a href="/blog/site-clinica-estetica-agendamento-online">site com agendamento online</a>.</li>
-  <li><strong>Rodapé enxuto:</strong> endereço, horário, registro profissional. Nada de menu que dispersa.</li>
-</ol>
-
-<p>Esse esqueleto é o mesmo da primeira dobra da nossa <a href="/demo">demo navegável (Clínica Aurora)</a> — abra e veja cada bloco aplicado.</p>
-
-<h2>O Caminho Racional: Landing → Site</h2>
-
-<p>Para a maioria das clínicas em início de captação digital, a sequência que preserva investimento é: <strong>landing bem-feita agora → medir por 60-90 dias → evoluir para site completo</strong> quando o SEO virar o gargalo. Nada se joga fora: a landing vira a página de conversão do site. Os números completos de investimento por etapa estão em <a href="/blog/quanto-custa-site-para-clinica-de-estetica">quanto custa um site para clínica de estética</a>.</p>
-
-<div class="callout-cta">
-  <strong>Não sabe se o seu caso pede landing ou site?</strong> Manda a sua situação pela <a href="/#orcamento">avaliação gratuita da Estetia</a> — a gente responde em até 1 hora com a recomendação honesta (inclusive quando a resposta for "landing basta por enquanto").
-</div>
-
-<h2>Resumo</h2>
-
-<p>Landing page (R$1.500-3.000, dias) converte quem chega e é o começo certo para clínica validando captação ou com procedimento carro-chefe. Site completo (R$3.000-5.000, semanas) soma a camada de aquisição: páginas que rankeiam em dezenas de buscas. Comece pelo que o seu momento pede — e evolua sem jogar nada fora.</p>
+<p>Landing page converte bem quando existe uma campanha paga com uma oferta única e mensurável; ela não substitui o site quando a clínica precisa de SEO orgânico, múltiplos serviços ou histórico de confiança. Este guia mostra quando cada formato serve, como estruturar a página e o caminho racional entre os dois.</p>
+<section><h2>O Que É (e o Que Não É) uma Landing Page</h2><p>Uma <strong>landing page</strong> é uma página única, sem menu de navegação, construída para uma única decisão: converter quem chegou até ali através de um clique pago ou de um link específico. Diferente do site institucional, ela não tenta contar toda a história da clínica — tenta fechar uma conversa que já começou em outro lugar, geralmente um anúncio.</p><p>Ela nasce para receber tráfego pago. Quando você cria uma campanha no Google Ads ou no Meta Ads para um procedimento específico — botox, limpeza de pele, drenagem linfática —, a landing page é o destino natural: a promessa do anúncio e o título da página precisam bater quase palavra por palavra, porque é esse <strong>match de mensagem</strong> que reduz o custo por clique e evita a página genérica que faz a paciente desistir em três segundos.</p><p>O que ela não é: não é um site menor, não é uma versão resumida da home, e não substitui as páginas de serviço que sustentam o tráfego orgânico do Google. Uma landing page bem-feita tem exatamente um botão, um formulário e zero links de saída — inclusive sem menu, porque cada clique que tira a visitante da página é uma conversão perdida.</p><h3>Landing page não é site pequeno</h3><p>A confusão mais comum é achar que a landing page é uma versão enxuta do site. São ferramentas com propósitos opostos: o site precisa de profundidade (múltiplas páginas, múltiplos serviços, histórico, SEO local) para ser encontrado organicamente; a landing page precisa de <strong>estreiteza</strong> (uma oferta, um argumento, um CTA) para converter quem já foi encontrado por um anúncio. Usar a lógica de uma para construir a outra é o erro mais caro dessa decisão.</p><p>Entendida a diferença de propósito, a pergunta certa não é &#39;landing page ou site&#39;, mas &#39;qual momento da clínica pede qual ferramenta&#39; — e é isso que os próximos tópicos resolvem.</p></section>
+<section><h2>Quando a Landing Page Basta</h2><p>A landing page basta quando existe <strong>uma campanha paga com prazo definido</strong> — o lançamento de um procedimento novo, uma promoção de aniversário da clínica, uma ação sazonal como outubro rosa ou verão. Nesses casos, você não precisa que a visitante navegue: quer que ela leia a oferta, veja a condição, e preencha o formulário.</p><p>Ela também é suficiente quando a clínica está <strong>testando um serviço novo</strong> antes de investir na estrutura completa de uma página de serviço no site. Rodar tráfego pago para uma landing page enxuta por duas ou três semanas mostra se existe demanda real pelo procedimento — sem o custo de produzir uma página robusta, com fotos profissionais e texto de SEO, para algo que pode não decolar.</p><ul><li>Uma promoção com data de validade (ex: condição especial até o fim do mês)</li><li>O lançamento de um equipamento ou técnica nova</li><li>Uma campanha de Meta Ads apontando para uma oferta única</li><li>Um evento pontual (dia de avaliação gratuita, mutirão de um procedimento)</li></ul><p>Nesses cenários, a página funciona porque a decisão de compra já está quase pronta — a visitante clicou em um anúncio que prometia algo específico. O trabalho da landing page é confirmar a promessa e remover o último atrito, não educar do zero sobre o que é a clínica.</p><p>Velocidade de carregamento importa mais aqui do que em qualquer outra página do site: como esse tráfego vem de anúncio pago, cada segundo de demora <strong>custa dinheiro literal</strong>. O próprio Google mostra que um segundo a mais de espera no mobile pode reduzir a conversão em até 20%, e mais da metade dos usuários brasileiros espera que uma página carregue em menos de três segundos no celular — abaixo disso, a taxa de abandono dispara antes mesmo de a oferta aparecer.</p></section>
+<section><h2>Quando Ela Limita: os Tetos da Página Única</h2><p>O teto mais óbvio é o <strong>SEO</strong>: uma landing page, por definição, mira uma única oferta com uma única palavra-chave. Ela não compete pelo volume de buscas orgânicas por &#39;clínica de estética em [bairro]&#39;, &#39;preço de botox&#39; ou qualquer uma das dezenas de termos que uma paciente digita antes de decidir onde agendar — para isso, é o site completo, com páginas de serviço e conteúdo, que faz o trabalho.</p><p>Ela também não sustenta <strong>prova social em profundidade</strong>. Uma landing page de campanha cabe dois ou três depoimentos e uma galeria pequena; não cabe o histórico completo de avaliações do Google, o antes-e-depois de cada procedimento e as credenciais de cada profissional da equipe — informação que constrói confiança ao longo de várias visitas, não em um único scroll.</p><h3>O teto do tráfego alugado</h3><p>Enquanto a campanha paga estiver ativa, a landing page recebe visitas. No dia em que o orçamento de anúncio acaba, o tráfego para com ela — porque a página não foi construída para aparecer organicamente no Google. É a mesma lógica de morar de aluguel: funciona enquanto a conta é paga, mas não constrói patrimônio digital para a clínica.</p><p>E há o teto operacional: cada procedimento novo vira uma landing page nova, cada landing page nova é uma URL isolada, sem menu, sem link para as outras páginas da clínica. Depois de cinco ou seis campanhas, a clínica tem um punhado de páginas soltas — nenhuma delas ajuda a outra a ranquear, e a gestão dessas URLs isoladas fica mais cara do que manter um site único com várias páginas de serviço.</p><p>Esses limites não tornam a landing page ruim — tornam-na uma ferramenta de campanha, não de fundação. A pergunta é sempre para qual dos dois papéis a clínica precisa agora.</p></section>
+<section><h2>Comparativo Direto: Landing Page vs. Site Completo</h2><p>Colocado lado a lado, o comparativo deixa claro que landing page e site não competem pelo mesmo papel — cada um vence em critérios diferentes, e a tabela abaixo resume onde cada um se destaca.</p><table><thead><tr><th scope="col">Critério</th><th scope="col">Landing Page</th><th scope="col">Site Completo</th></tr></thead><tbody><tr><td>Objetivo</td><td>Converter uma oferta específica</td><td>Atrair e converter tráfego contínuo</td></tr><tr><td>Tráfego principal</td><td>Pago (Google Ads, Meta Ads)</td><td>Orgânico (busca no Google, Perfil da Empresa)</td></tr><tr><td>SEO</td><td>Quase nulo, uma palavra-chave</td><td>Amplo, dezenas de páginas e termos</td></tr><tr><td>Tempo de produção</td><td>1 a 3 dias</td><td>2 a 6 semanas</td></tr><tr><td>Custo inicial</td><td>Baixo</td><td>Médio a alto</td></tr><tr><td>Vida útil</td><td>Duração da campanha</td><td>Permanente, com manutenção</td></tr><tr><td>Prova social</td><td>Limitada, 2-3 depoimentos</td><td>Completa, histórico de avaliações</td></tr><tr><td>Melhor para</td><td>Lançamentos, promoções, testes</td><td>Presença permanente, múltiplos serviços</td></tr></tbody></table><p>O padrão que emerge da tabela é simples: a landing page ganha em <strong>velocidade e foco</strong>, o site ganha em <strong>permanência e alcance</strong>. Nenhuma clínica saudável escolhe apenas um dos dois para sempre — a decisão certa é sobre qual construir primeiro e quando o segundo se torna necessário.</p><p>Clínicas em fase de teste de demanda ou rodando uma campanha isolada tendem a começar pela landing page, por ser mais rápida e barata de validar. Clínicas que já sabem quais procedimentos vendem e querem parar de depender só de anúncio pago migram o investimento para o site — é o caminho descrito no próximo tópico.</p></section>
+<section><h2>A Estrutura da Landing Page Que Converte</h2><p>A landing page que converte segue uma ordem fixa: <strong>promessa no topo</strong>, prova logo abaixo, formulário sempre visível. O título repete a oferta do anúncio quase palavra por palavra — se o anúncio fala em &#39;avaliação gratuita para preenchimento labial&#39;, o título da página fala a mesma coisa, sem sinônimo criativo no meio do caminho.</p><ul><li>Título com a oferta exata do anúncio</li><li>Um subtítulo que resolve a objeção mais comum (preço, dor, tempo de recuperação)</li><li>Uma foto real do ambiente ou da equipe, nunca banco de imagens</li><li>Três a cinco linhas de benefício, não de característica técnica</li><li>Um único botão, repetido no topo e no fim da página</li><li>Um selo de confiança (registro profissional do responsável, avaliações do Google)</li></ul><h3>O formulário é o único caminho de saída</h3><p>Como a página não tem menu, o formulário — ou o botão de WhatsApp — é a única ação possível. Por isso, cada campo a mais é um motivo a mais para desistir: nome, telefone e o procedimento de interesse já bastam para qualificar o lead. Pedir CPF, endereço completo ou histórico de saúde numa landing page de topo de funil não aumenta a qualidade do lead — aumenta a taxa de abandono, e ainda contraria o princípio de <strong>minimização de dados</strong> que a ANPD recomenda: colete apenas o que a finalidade do formulário exige.</p><p>Depois do envio, a página deve confirmar o próximo passo — &#39;em poucos minutos você recebe uma mensagem no WhatsApp&#39; — e, se possível, redirecionar direto para a conversa. O silêncio entre o clique e a resposta é onde a maioria dos leads pagos esfria.</p><p>E tudo isso precisa funcionar primeiro no celular: a esmagadora maioria do tráfego pago de campanhas locais chega por smartphone, então testar a página só no notebook do consultório é testar a experiência errada.</p></section>
+<section><h2>O Caminho Racional: da Landing Page ao Site Completo</h2><p>A pergunta que decide a migração não é &#39;quanto tempo já uso a landing page&#39;, é: <strong>essa oferta continua gerando agendamento mês após mês, ou foi um pico de campanha</strong>? Procedimento que converte de forma consistente, em mais de uma campanha, já provou que merece uma página permanente — com SEO, com mais prova social, com link para as outras páginas da clínica.</p><p>Na prática, o sinal costuma aparecer depois de duas ou três campanhas para o mesmo procedimento: se o custo por lead se mantém estável ou cai, e a agenda enche, a clínica está pagando por tráfego que uma página de serviço bem otimizada capturaria de graça, organicamente, meses depois.</p><p>Esse é também o momento de revisar o que a página promete. A publicidade de procedimentos estéticos está sob escrutínio crescente — as atualizações recentes do Código Brasileiro de Autorregulamentação Publicitária reforçam a exigência de comprovação científica e transparência em anúncios de saúde e beleza. Uma landing page de campanha que exagera resultado ou omite risco é o tipo de peça que motiva notificação, e o problema cresce junto com o alcance do anúncio pago.</p><p>Migrar não significa apagar a landing page: ela continua útil para a próxima campanha pontual. Significa <strong>criar, no site, uma página de serviço permanente</strong> para o procedimento validado — com SEO local, com galeria de antes-e-depois seguindo as regras de consentimento, com link natural para agendamento — e deixar a landing page de volta ao papel de porta de entrada temporária, não de casa definitiva.</p><p>O teste mais simples para saber se chegou a hora: se você tivesse que apagar a landing page hoje, a clínica perderia agendamentos que hoje vêm de busca orgânica por aquele procedimento? Se a resposta é não, ainda é cedo. Se é sim — ou se você nem sabe responder porque nunca mediu —, o site de captação já deveria estar no radar.</p></section>
+<section><h2>Fontes</h2><ul><li><a href="https://www.thinkwithgoogle.com/intl/pt-br/estrategias-de-marketing/apps-e-mobile/nao-faca-o-cliente-esperar-como-testar-e-melhorar-a-velocidade-do-seu-site-mobile/">Não faça o cliente esperar: como testar e melhorar a velocidade do seu site mobile</a> — Think with Google Brasil, 2024-08-29</li><li><a href="https://www.gov.br/anpd/pt-br/centrais-de-conteudo/materiais-educativos-e-publicacoes/guia-orientativo-cookies-e-protecao-de-dados-pessoais.pdf">Guia Orientativo: Cookies e Proteção de Dados Pessoais</a> — Autoridade Nacional de Proteção de Dados (ANPD), 2022-10-18</li><li><a href="https://www.machadomeyer.com.br/pt/inteligencia-juridica/publicacoes-ij/direito-das-relacoes-de-consumo/o-controle-da-publicidade-em-2024-e-perspectivas-para-2025">O controle da publicidade em 2024 e perspectivas para 2025</a> — Machado Meyer Advogados, 2024-12-20</li><li><a href="https://conar.org.br/pdf/Codigo-CONAR-2025.pdf">Código Brasileiro de Autorregulamentação Publicitária (edição 2025)</a> — CONAR – Conselho Nacional de Autorregulamentação Publicitária, 2025-10-27</li></ul></section>
 `,
 };
