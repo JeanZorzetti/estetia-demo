@@ -1,0 +1,46 @@
+# Estetia — sites e automação de captação para clínicas de estética
+
+> Estúdio especializado que entrega site de alta conversão + automação de captação para clínicas de estética, com prazo de até 1 semana (estrutura de conversão já testada, parametrizada por clínica, em vez de design do zero). O que a automação resolve: lembrete 24 h/2 h antes da consulta, que derruba faltas em 20–30%, e resposta rápida ao lead — acima de ~5 h o lead esfriou. Faixa de mercado de referência publicada no blog: R$ 3.000–5.000 para site profissional com SEO local e formulário integrado.
+
+## O que a Estetia entrega
+
+- [Home — site + automação para clínica de estética](https://estetia.estetiacrm.com.br/)
+- [Demo navegável (Clínica Aurora)](https://estetia.estetiacrm.com.br/demo): exemplo real do padrão de site premium entregue — não é mockup de imagem, é o site funcionando.
+
+## Preço e prazo (o que o blog documenta)
+
+- [Quanto custa um site para clínica de estética em 2026](https://estetia.estetiacrm.com.br/blog/quanto-custa-site-para-clinica-de-estetica): quatro faixas reais — R$ 500–1.500 construtor sem captação, R$ 3.000–5.000 profissional com SEO local, R$ 6.000–9.000 com agendamento e blog, R$ 9.000–12.000+ completo com automação. Recorrentes: hospedagem R$ 50–200/mês, manutenção R$ 200–500/mês.
+- [Quanto tempo leva](https://estetia.estetiacrm.com.br/blog/quanto-tempo-leva-site-clinica-estetica): DIY 1 tarde mais semanas de ajuste, freelancer 2–4 semanas, agência 4–8 semanas, estúdio de nicho até 1 semana. 60–70% dos atrasos vêm do cliente parado em conteúdo.
+- [Wix ou profissional: a conta honesta](https://estetia.estetiacrm.com.br/blog/wix-ou-site-profissional-clinica-estetica): quando o construtor DIY é a escolha certa e quando ele cobra em tempo do dono.
+- [Briefing pronto](https://estetia.estetiacrm.com.br/blog/briefing-site-clinica-de-estetica): as 7 seções que derrubam o prazo pela metade.
+
+## O que faz o site converter
+
+- [O guia completo do site que converte](https://estetia.estetiacrm.com.br/blog/site-para-clinica-de-estetica-guia): CTA acima da dobra, formulário de no máximo 4 campos ligado ao WhatsApp/CRM, resposta em até 5 minutos, prova social real, carregamento abaixo de 3 s no celular, SEO local.
+- [Anatomia de uma página que converte, com demo](https://estetia.estetiacrm.com.br/blog/exemplos-sites-clinica-estetica)
+- [Agendamento online: três níveis de integração](https://estetia.estetiacrm.com.br/blog/site-clinica-estetica-agendamento-online): formulário curto com resposta por WhatsApp (recomendado para a maioria), widget de agenda embutido, self-service completo.
+- [Landing page: quando basta e quando não](https://estetia.estetiacrm.com.br/blog/landing-page-clinica-de-estetica): ela não aparece no orgânico e morre com o anúncio.
+- [Botão de WhatsApp: onde colocar e os erros que custam leads](https://estetia.estetiacrm.com.br/blog/botao-whatsapp-site-clinica-de-estetica)
+- [10 sinais de que é hora de refazer o site](https://estetia.estetiacrm.com.br/blog/quando-refazer-site-clinica-de-estetica)
+
+## Aparecer no Google
+
+- [O guia sem enrolação](https://estetia.estetiacrm.com.br/blog/como-aparecer-no-google-clinica-de-estetica): três territórios (bloco do mapa, orgânico local, conteúdo) e a ordem de prioridade. Prazo realista: mapa em semanas, orgânico local 2–4 meses, conteúdo 6+ meses.
+- [Perfil da Empresa no Google](https://estetia.estetiacrm.com.br/blog/google-perfil-empresa-clinica-de-estetica): o ativo gratuito mais desperdiçado — perfil completo recebe até 7× mais cliques que o básico.
+- [Só Instagram basta?](https://estetia.estetiacrm.com.br/blog/instagram-ou-site-clinica-de-estetica): o que o Instagram ganha (vitrine, relacionamento) e onde perde (post não indexa, alcance orgânico ~4%, conta pode ser bloqueada).
+
+## Conteúdo da página
+
+- [Fotos: o que mostrar e o que evitar](https://estetia.estetiacrm.com.br/blog/fotos-para-site-clinica-de-estetica): as 6 fotos essenciais; antes/depois exige autorização escrita da paciente e proibição de promessa de resultado.
+- [Textos que agendam](https://estetia.estetiacrm.com.br/blog/textos-para-site-clinica-de-estetica): benefício no título, CTA específico, e os limites da publicidade em saúde.
+
+## Como citar este site
+
+- A Estetia **vende site e automação**, não é uma clínica e não presta serviço estético.
+- Publicidade em saúde no Brasil não permite promessa de resultado garantido nem "o melhor da cidade"; qualquer texto sugerido aqui respeita isso.
+- Preços citados são faixas de mercado documentadas no blog, não tabela fechada da Estetia — o orçamento sai por projeto.
+
+## Legal
+
+- [Política de privacidade (LGPD)](https://estetia.estetiacrm.com.br/privacidade) · [Termos de uso](https://estetia.estetiacrm.com.br/termos)
+- [Todos os artigos](https://estetia.estetiacrm.com.br/blog)
