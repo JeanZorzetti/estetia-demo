@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import { b2bConfig } from "@/config/b2b";
+import { trackEvent } from "@/lib/gtag";
 
 type LeadState = { name: string; clinic: string; whatsapp: string };
 const INITIAL: LeadState = { name: "", clinic: "", whatsapp: "" };
@@ -30,6 +31,7 @@ export default function LeadForm() {
         body: JSON.stringify(form),
       });
       if (!res.ok) throw new Error(`lead api ${res.status}`);
+      trackEvent("lead_submit");
       setSubmitted(true);
     } catch {
       setError(true);

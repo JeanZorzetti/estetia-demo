@@ -2,6 +2,7 @@
 import Link from "next/link";
 import { b2bConfig } from "@/config/b2b";
 import LeadForm from "@/components/b2b/LeadForm";
+import DemoLink from "@/components/b2b/DemoLink";
 
 const painToneClass: Record<string, string> = {
   error: "bg-red-50 text-red-600",
@@ -93,10 +94,10 @@ export default function HomePage() {
           <div className="lg:col-span-5 lg:pl-12 flex flex-col items-start gap-6">
             <h2 className="font-display text-4xl">{c.proof.title}</h2>
             <p className="text-on-surface-variant">{c.proof.body}</p>
-            <Link href={c.demoUrl} className="inline-flex items-center gap-2 px-6 py-3 border border-primary text-primary rounded-full text-sm font-semibold uppercase tracking-widest hover:bg-primary hover:text-on-primary transition-colors duration-300">
+            <DemoLink href={c.demoUrl} className="inline-flex items-center gap-2 px-6 py-3 border border-primary text-primary rounded-full text-sm font-semibold uppercase tracking-widest hover:bg-primary hover:text-on-primary transition-colors duration-300">
               <span className="material-symbols-outlined">visibility</span>
               {c.proof.cta}
-            </Link>
+            </DemoLink>
           </div>
         </div>
       </section>
